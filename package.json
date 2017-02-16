@@ -5,7 +5,7 @@
   "main": "front-end-101.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create presentation":"https://github.com/hakimel/reveal.js.git"
+    "create-presentation":"git clone https://github.com/hakimel/reveal.js.git && cd reveal.js && rm -r .git"
   },
   "repository": {
     "type": "git",
