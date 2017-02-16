@@ -1,0 +1,32 @@
+{
+  "name": "conference-talks",
+  "version": "1.0.0",
+  "description": "A collection of all of my presentations within the realm of technology",
+  "main": "front-end-101.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create presentation":"https://github.com/hakimel/reveal.js.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZuriHunter/conference-talks.git"
+  },
+  "keywords": [
+    "Talks",
+    "Conferences",
+    "Seminars",
+    "Tech",
+    "Web",
+    "Software",
+    "Development",
+    "Hardware",
+    "Mentorship",
+    "IoT"
+  ],
+  "author": "Zuri Hunter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZuriHunter/conference-talks/issues"
+  },
+  "homepage": "https://github.com/ZuriHunter/conference-talks#readme"
+}
