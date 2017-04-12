@@ -2,7 +2,7 @@
   "name": "conference-talks",
   "version": "1.0.0",
   "description": "A collection of all of my presentations within the realm of technology",
-  "main": "front-end-101.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "create-presentation":"git clone https://github.com/hakimel/reveal.js.git && cd reveal.js && sudo rm -r .git"

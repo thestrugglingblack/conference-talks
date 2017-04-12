@@ -5,9 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>Front-End 101</title>
-
+		<link rel="stylesheet" href="css/custom.css" >
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" >
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -28,136 +29,129 @@
 				<!-- TITLE PAGE -->
 				<section data-background="#00263D">
 					<h1>FRONT-END <span style="color:#D2202F !important;">1</span>0<span style="color:#D2202F !important;">1</span></h1>
-					<hr style="color:#D2202F !important;"/>
-					<b>Zuri Hunter</b> <span style="color:#D2202F !important;">|</span> <i>Github Icon</i> <span style="color:#D2202F !important;">|</span><i>Twitter Icon</i> <span style="color:#D2202F !important;">|</span> <i>LinkedIn Icon</i>
+					<hr style="border:none; height: 8px; background-color:#D2202F;"/>
+					<b>
+						<a id="non-link" href="http://www.zurihunter.com">
+							Zuri Hunter
+						</a>
+					</b>
+					<span style="color:#D2202F !important;">
+						|
+					</span>
+					<a href="http://www.github.com/ZuriHunter">
+						<i class="fa fa-github-alt fa-1x">
+						</i>
+					</a>
+					<span style="color:#D2202F !important;">
+						|
+					</span>
+					<a href="http://www.twitter.com/ZuriHunter">
+						<i class="fa fa-twitter">
+						</i>
+					</a>
+					<span style="color:#D2202F !important;">
+						|
+					</span>
+					<a href="http://www.linkedin.com/in/zuri-hunter-748ba514/">
+						<i class="fa fa-linkedin-square">
+						</i>
+					</a>
 				</section>
 
 				<!--  AGENDA -->
 				<section data-background="#00263D">
-					<h1>Overview</h1>
-					<ul>
-						<li>
-							How the Web Works?
-						</li>
-						<li>
-							Roles in Web Development
-						</li>
-						<li>
-							What is Front-End?
-						</li>
-						<li>
-							Typical Development Environment
-						</li>
-						<li>
-							Landing Page
-						</li>
-					</ul>
+					<div style="float:left;">
+						<h2 style="text-align: left;">Overview</h2>
+						<hr style="border:none; height: 8px; background-color:#D2202F;"/>
+						<ul>
+							<li>
+								How the Web Works?
+							</li>
+							<li>
+								Typical Development Environment
+							</li>
+							<li>
+								What is Front-End?
+							</li>
+							<li>
+								Basics of Hyper Text Markup Language
+							</li>
+							<li>
+								Basics of Cascade Styling Sheets
+							</li>
+							<li>
+								Basic of JavaScript
+							</li>
+							<li>
+								Landing Page
+							</li>
+						</ul>
+					</div>
 				</section>
 
 				<!-- HOW THE WEB WORKS -->
 				<section>
 					<section data-background="#00263D">
-						<h1>How the Web Works?</h1>
-						<hr />
+						<h1 style="text-align: left;">How the Web Works?</h1>
+						<hr style="border:none; height: 8px; background-color:#D2202F;" />
+					</section>
+					<section data-background="#6B818D">
+						<h2>What is the Web?</h2>
+						<img src="/assets/Web.svg" />
+						<img src="/assets/Cancel.svg" />
+					</section>
+					<section data-background="#6B818D">
+						<h2>Connect & Share</h2>
+						<img src="/assets/Overview.svg" />
 					</section>
 					<section data-background="#6B818D">
 						I dont know
 					</section>
 				</section>
 
-				<!-- ROLES IN WEB DEVELOPMENT -->
-				<section>
-					<section data-background="#00263D">
-						<h1>Roles in Web Development</h1>
-						<hr  />
-					</section>
-					<section data-background="#6B818D">
-						Back-End Developer
-					</section>
-					<section data-background="#6B818D">
-						DevOps Developer
-					</section>
-					<section data-background="#6B818D">
-						Quality Assurance Developer
-					</section>
-					<section data-background="#6B818D">
-						UX/UI Designer
-					</section>
-					<section data-background="#6B818D">
-						Front-End Developer
-					</section>
-
-				</section>
-
-				<!-- WHAT IS FRONT-END? -->
-				<section>
-					<section data-background="#00263D">
-						<h1>What is Front-End?</h1>
-						<hr />
-					</section>
-
-					<section data-background="#6B818D">
-						High Level description
-						Three main Languages
-					</section>
-					<section data-background="#6B818D">
-						Browsers
-					</section>
-					<section data-background="#6B818D">
-						HTML
-					</section>
-					<section data-background="#6B818D">
-						CSS
-					</section>
-					<section data-background="#6B818D">
-						Javascript
-					</section>
-					<section data-background="#6B818D">
-						Tools
-					</section>
-				</section>
-
 				<!-- TYPICAL DEVELOPMENT ENVIRONMENT -->
 				<section>
 					<section data-background="#00263D">
-						<h1>Typical Development Environment</h1>
-						<hr />
+						<h1 style="text-align: left;">Typical Development Environment</h1>
+						<hr style="border:none; height: 8px; background-color:#D2202F;" />
 					</section>
 					<section data-background="#6B818D">
 						<div class="left">
 							<h2>Text Editor</h2>
-							<p>
-								A development tool that allows you to create, edit, delete and save a large variety of text files.
-							</p>
-							<ul>
-								<li>
-									Atom
-								</li>
-								<li>
-									Sublime Text
-								</li>
-								<li>
-									**VIM
-								</li>
-								<li>
-									Notepad ++
-								</li>
-								<li>
-									Brackets
-								</li>
-							</ul>
+								<div class="content" style="width: 50%;">
+								<p>
+									A development tool that allows you to create, edit, delete and save a large variety of text files.
+								</p>
+								<ul>
+									<li>
+										Atom
+									</li>
+									<li>
+										Sublime Text
+									</li>
+									<li>
+										VIM
+									</li>
+									<li>
+										Notepad ++
+									</li>
+									<li>
+										Brackets
+									</li>
+								</ul>
+							</div>
 						</div>
 						<div class="right">
-							<p>
-								A GIF OF ATOM TEXT EDITOR
-							</p>
+							<div class="img-container right">
+								<img class="gifs" src="./assets/st.gif" />
+							</div>
 						</div>
 					</section>
 					<section data-background="#6B818D">
 						<div class="right">
 							<h2>Command Line</h2>
 							<p>
-								An application that allows for you to issue commands to programs within the computer
+								An application that allows for you to issue commands to programs within the computer.
 							</p>
 							<ul>
 								<li>
@@ -172,9 +166,7 @@
 							</ul>
 						</div>
 						<div class="left">
-							<p>
-								A GIF OF THE COMMAND LINE
-							</p>
+							<img src="./assets/cli.gif" />
 						</div>
 					</section>
 					<section data-background="#6B818D">
@@ -210,23 +202,212 @@
 							<p>
 								An online web tool that allows you to do your work virtually encompassing all the tools needed for web development.
 							</p>
+							<ul>
+								<li>
+									Codeanywhere
+								</li>
+								<li>
+									Cloud9
+								</li>
+								<li>
+									Koding
+								</li>
+							</ul>
 						</div>
 						<div class="left">
-							<p>
-								A GIF OF CODEANYWHERE.
-							</p>
+							<img src="./assets/ni.gif"  />
 						</div>
 					</section>
 				</section>
 
+				<!-- WHAT IS FRONT-END? -->
+				<section>
+					<section data-background="#00263D">
+						<h1 style="text-align: left;">What is Front-End?</h1>
+						<hr style="border:none; height: 8px; background-color:#D2202F;" />
+					</section>
+
+					<section>
+						<img style="height: 55%; width:55%;" src="./assets/front-end-path.png" />
+					</section>
+
+					<section data-background="#6B818D">
+						<div class="left">
+						<img src="./assets/jscsshtml.png" />
+						</div>
+						<div class="right">
+							<h2>Front-End Development</h2>
+							<p>
+								Also known as <i>"client-side"</i> development is the practice of producing <b>HTML</b>, <b>CSS</b> and <b>Javascript</b> for a website or web application so that users can see and interact with them directly.
+							</p>
+							<ul>
+								<li>
+									Cross Browser
+								</li>
+								<li>
+									Cross Device
+								</li>
+								<li>
+									Cross Platform
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section data-background="#6B818D">
+						<h3>Browsers</h2>
+						<div class="left">
+							<h4>Web Browser</h4>
+							<p>
+								A software used to retrieve
+							</p>
+						</div>
+						<div class="right">
+							<h4>Headless Browser</h4>
+							<p>
+								A browser without a graphical user interface
+							</p>
+						</div>
+					</section>
+
+					<section data-background="#6B818D">
+						<h3>Browsers...</h3>
+						<div class="left">
+							<h4>WebView</h4>
+							<p>
+								A tool used within
+							</p>
+						</div>
+						<div class="right">
+
+						</div>
+					</section>
+					<section data-background="#6B818D">
+						HTML
+					</section>
+					<section data-background="#6B818D">
+						CSS
+					</section>
+					<section data-background="#6B818D">
+						Javascript
+					</section>
+					<section data-background="#6B818D">
+						Tools
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#00263D">
+						<h1 style="text-align: left;"><u><span style="color:#D2202F;">H</span></u>yper <u><span style="color:#D2202F;">T</span></u>ext <u><span style="color:#D2202F;">M</span></u>arkup <u><span style="color:#D2202F;">L</span></u>anguage</h1>
+						<hr style="border:none; height: 8px; background-color:#D2202F;" />
+					</section>
+					<section data-background="#00263D">
+						<p>
+							<b>Hyper Text Markup Language</b> or <b style="color:#D2202F;">HTML</b> for short is one of basic building blocks in Web Dvelopment.
+						</p>
+					</section>
+					<section data-background="#00263D">
+						<p>
+							The basic structure of HTML consist of <b>opening</b> and <b>closing</b> tags.
+						</p>
+						<code>
+							<TAG_NAME>
+								CONTENT
+							</TAG_NAME>
+						</code>
+					</section>
+					<section data-background="#00263D">
+
+						<code>
+							<!doctype html>
+							<html>
+							<title> Front-End 101</title>
+							<head>
+								<link rel="stylesheet" href="mycss.css">
+								<script>
+									console.log("Welcome to Front-End 101")
+								</script>
+							</head>
+							<body>
+								<h1>Front-End Jobs</h1>
+								<p>
+									Here are the jobs in your area:
+								</p>
+								<ul>
+									<li>
+
+									</li>
+								</ul>
+							</body>
+							</html>
+						</code>
+					</section>
+
+					<section data-background="#00263D">
+						<h3>Resources</h3>
+						<ul>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#00263D">
+						<h1 style="text-align: left;"><u><span style="color:#D2202F;">C</span></u>ascade <u><span style="color:#D2202F;">S</span></u>tyling <u><span style="color:#D2202F;">S</span></u>heets</h1>
+						<hr style="border:none; height: 8px; background-color:#D2202F;" />
+					</section>
+					<section data-background="#00263D">
+						<p>
+							<b>Cascade Styling Sheets</b> or CSS is the component in web development that focuses on the look and feel of the web application
+						</p>
+					</section>
+					<section data-background="#00263D">
+						<h3>Resources</h3>
+						<ul>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#00263D">
+						<h1 style="text-align: left;"> <u><span style="color:#D2202F;">J</span></u>avaScript</h1>
+						<hr style="border:none; height: 8px; background-color:#D2202F;" />
+					</section>
+					<section data-background="#00263D">
+						<p>
+							<b>JavaScript</b> is a scripting language that is widely used in web development.
+						</p>
+					</section>
+				</section>
+
+
+
 				<!-- LANDING PAGE -->
 				<section>
 					<section data-background="#00263D">
-						<h1>Landing Page</h1>
-						<hr />
+						<h1 style="text-align: left;">Landing Page</h1>
+						<hr style="border:none; height: 8px; background-color:#D2202F;"/>
 					</section>
 					<section data-background="#6B818D">
-						Go to Codeanywhere
+						What we are creating
+
+					</section>
+					<section>
+						<p>
+							A simple file structure
+						</p>
+						<code>
+							- assets
+							- js
+							-- custom.js
+							- css
+							-- custom.css
+							index.html
+						</code>
 					</section>
 					<section data-background="#6B818D">
 						Add HTML

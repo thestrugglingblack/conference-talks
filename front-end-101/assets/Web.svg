@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1366px" height="750px" viewBox="0 0 1366 750" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Web</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-551.000000, -680.000000)">
+            <g id="Web" transform="translate(552.000000, 681.000000)">
+                <path d="M682,33.3563607 C641.874753,12.141821 595.288766,0 545.6,0 C394.93672,0 272.8,111.630336 272.8,249.333333 C122.13672,249.333333 0,360.963669 0,498.666667 C0,636.369664 122.13672,748 272.8,748 C358.128085,748 434.306224,712.194364 484.329412,656.125299 C534.3526,712.194364 610.530738,748 695.858824,748 C773.648482,748 843.833506,718.241494 893.529434,670.500605 C943.225338,718.241503 1013.41035,748 1091.2,748 C1241.86328,748 1364,636.369664 1364,498.666667 C1364,360.963669 1241.86328,249.333333 1091.2,249.333333 C1091.2,111.630336 969.06328,0 818.4,0 C768.711234,0 722.125247,12.141821 682,33.3563607 Z" id="Combined-Shape" stroke="#C5C5C5" fill="#C5C5C5"></path>
+                <text id="The-Web" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="144" font-weight="bold" letter-spacing="0.250000089" fill="#000000">
+                    <tspan x="384.084151" y="429">The Web </tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

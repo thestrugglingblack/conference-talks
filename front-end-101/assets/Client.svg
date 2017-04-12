@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1433px" height="911px" viewBox="0 0 1433 911" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Client</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="3" width="991" height="524" rx="8"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="991" height="524" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="45" y="35" width="900" height="452"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="900" height="452" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-576.000000, -1916.000000)">
+            <g id="Client" transform="translate(576.000000, 1916.000000)">
+                <g id="Group-2" transform="translate(37.000000, 0.000000)">
+                    <rect id="Rectangle-8" fill="#D8D8D8" x="0" y="0" width="991" height="595" rx="8"></rect>
+                    <use id="Rectangle-6" stroke="#000000" mask="url(#mask-2)" stroke-width="2" fill="#000000" xlink:href="#path-1"></use>
+                    <use id="Rectangle-7" stroke="#979797" mask="url(#mask-4)" stroke-width="2" fill="#69D9DB" xlink:href="#path-3"></use>
+                </g>
+                <g id="Group-3" transform="translate(260.000000, 595.000000)" fill="#D8D8D8">
+                    <polygon id="Polygon" transform="translate(272.644030, 65.125480) scale(1, -1) translate(-272.644030, -65.125480) " points="272.64403 0 357.28806 0 324.956917 130.25096 220.331142 130.25096 188 1.80759518e-14"></polygon>
+                    <rect id="Rectangle-9" x="0" y="126" width="546" height="22" rx="8"></rect>
+                </g>
+                <g id="Tag" transform="translate(0.000000, 743.000000)">
+                    <rect id="Rectangle-10" fill="#FFFFFF" x="0" y="0" width="519" height="168"></rect>
+                    <text id="Client" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="66" font-weight="bold" letter-spacing="0.250000089" fill="#000000">
+                        <tspan x="167.642" y="109">Client</tspan>
+                    </text>
+                </g>
+                <path d="M1000.5,286.5 L1384,286.5" id="Line" stroke="#FB0000" stroke-width="26" stroke-linecap="square"></path>
+                <path id="Line-decoration-1" d="M1384,286.5 L1373.2,283.5 L1373.2,289.5 L1384,286.5 Z" stroke="#FB0000" stroke-width="26" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

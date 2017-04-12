@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1215px" height="1212px" viewBox="0 0 1215 1212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Cancel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-2689.000000, -1254.000000)" stroke="#C43B3B">
+            <g id="Cancel" transform="translate(2690.000000, 1255.000000)">
+                <path d="M606.5,1210 C271.539299,1210 0,939.132274 0,605 C0,270.867726 271.539299,0 606.5,0 C941.460701,0 1213,270.867726 1213,605 C1213,939.132274 941.460701,1210 606.5,1210 Z M606.5,1054.44444 C855.336737,1054.44444 1057.05877,853.221313 1057.05877,605 C1057.05877,356.778687 855.336737,155.555556 606.5,155.555556 C357.663263,155.555556 155.94123,356.778687 155.94123,605 C155.94123,853.221313 357.663263,1054.44444 606.5,1054.44444 Z" id="Combined-Shape" fill="#C43B3B"></path>
+                <path d="M246.721304,260.555556 L972.961892,937.222222" id="Line" stroke-width="159" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

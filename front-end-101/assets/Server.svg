@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="833px" height="1301px" viewBox="0 0 833 1301" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Server</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="238" width="408" height="795"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="408" height="795" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="436" height="177"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="436" height="177" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-4552.000000, -1645.000000)">
+            <g id="Server" transform="translate(4552.000000, 1658.000000)">
+                <g id="Group" transform="translate(218.000000, 0.000000)" stroke="#FFFFFF" fill="#809EC3">
+                    <use id="Rectangle" mask="url(#mask-2)" stroke-width="18" xlink:href="#path-1"></use>
+                    <polyline id="Path-2" stroke-width="10" points="404.600098 239.25 605.790039 0.959960938 609.787802 703.560484 401.600098 1029.78003"></polyline>
+                    <polyline id="Path-3" points="600.090537 10.0756678 234.812626 10.0756678 3.72221522 245.302923 402.191028 245.302923"></polyline>
+                </g>
+                <g id="Buttons-and-Drives" transform="translate(272.000000, 317.000000)">
+                    <rect id="Rectangle-2" fill="#D8D8D8" x="0" y="0" width="290" height="113"></rect>
+                    <rect id="Rectangle-3" fill="#D8D8D8" x="3" y="128" width="283" height="37"></rect>
+                    <rect id="Rectangle-4" fill="#D8D8D8" x="32" y="213" width="226" height="35" rx="8"></rect>
+                    <ellipse id="Oval-4" fill="#FF4343" cx="46.5" cy="312.5" rx="23.5" ry="11.5"></ellipse>
+                    <ellipse id="Oval-4" fill="#E9FF15" cx="140.5" cy="312.5" rx="23.5" ry="11.5"></ellipse>
+                    <ellipse id="Oval-4" fill="#2EFF5E" cx="227.5" cy="312.5" rx="23.5" ry="11.5"></ellipse>
+                </g>
+                <g id="Tag" transform="translate(0.000000, 908.000000)">
+                    <use id="Rectangle-5" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="24" fill="#FFFFFF" xlink:href="#path-3"></use>
+                    <text id="Server" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="66" font-weight="bold" line-spacing="113" letter-spacing="0.250000089" fill="#000000">
+                        <tspan x="115.236724" y="96">Server</tspan>
+                    </text>
+                </g>
+                <path d="M414,1030 L79,1260" id="Line" stroke="#FB0000" stroke-width="26" stroke-linecap="square"></path>
+                <path id="Line-decoration-1" d="M79,1260 L89.6015479,1256.36033 L86.2055089,1251.41393 L79,1260 Z" stroke="#FB0000" stroke-width="26" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
