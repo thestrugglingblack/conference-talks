@@ -13,15 +13,14 @@ a:hover{
   text-align: right;
   padding: 0;
   margin: 0;
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .left {
   float: left;
   text-align: left;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
+  padding: 20px; 
+  display: inline-block !important;
 }
 section{
   padding: 0 !important;
