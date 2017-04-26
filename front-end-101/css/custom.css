@@ -19,7 +19,7 @@ a:hover{
 .left {
   float: left;
   text-align: left;
-  padding: 20px; 
+  padding: 20px;
   display: inline-block !important;
 }
 section{
@@ -40,4 +40,7 @@ section{
 
 .gifs {
   border: none;
+}
+img {
+  border: none !important;
 }
