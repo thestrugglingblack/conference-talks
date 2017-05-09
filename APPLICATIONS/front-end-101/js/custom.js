@@ -36,3 +36,14 @@
   nameOfFunction(100 + 1)
 
 */
+
+console.log("Welcome to Front-End 101")
+
+window.onload = function(){
+  function subscribeModal(){
+   alert("You Have Subscribed!")
+ }
+ document.getElementById('subscribe').onclick = function(){
+   subscribeModal();
+ }
+};

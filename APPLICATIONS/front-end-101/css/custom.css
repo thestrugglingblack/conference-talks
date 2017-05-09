@@ -12,3 +12,31 @@
   ID            #ID_NAME
   element      ELEMENT NAME
 */
+
+* {
+  color: #ffffff;
+  font-family: monospace;
+}
+
+body{
+  background-image: url(../assets/stock-image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.form-container {
+  padding: 50px 50px 50px 50px;
+  text-align: center;
+}
+
+form {
+  height: 40%;
+  padding-left: 300px;
+  padding-right: 300px;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+
+button {
+  background-color: gray;
+}
