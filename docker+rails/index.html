@@ -7,6 +7,8 @@
 		<title>Docker + Rails</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
+
 		<link rel="stylesheet" href="css/theme/black.css">
 		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" >
 
@@ -28,29 +30,29 @@
 			<div class="slides">
 
 				<!-- INTRO PAGE -->
-				<section>
-					<h1>Docker + Rails</h1>
+				<section data-background="#F0EBCB">
+					<h1 style="color:#AA2F2F;">Docker + Rails</h1>
 					<hr style="border:none; height: 8px; background-color:#D2202F;"/>
 					<b>
 						<a id="non-link" href="http://www.zurihunter.com">
 							Zuri Hunter
 						</a>
 					</b>
-					<span style="color:#D2202F !important;">
+					<span style="color:#AA2F2F !important;">
 						|
 					</span>
 					<a href="http://www.github.com/ZuriHunter">
 						<i class="fa fa-github-alt fa-1x">
 						</i>
 					</a>
-					<span style="color:#D2202F !important;">
+					<span style="color:#AA2F2F !important;">
 						|
 					</span>
 					<a href="http://www.twitter.com/ZuriHunter">
 						<i class="fa fa-twitter">
 						</i>
 					</a>
-					<span style="color:#D2202F !important;">
+					<span style="color:#AA2F2F !important;">
 						|
 					</span>
 					<a href="http://www.linkedin.com/in/zuri-hunter-748ba514/">
@@ -60,7 +62,7 @@
 				</section>
 
 				<!-- AGENDA -->
-				<section>
+				<section data-background="#F0EBCB">
 					<h2>Overview</h2>
 					<ul>
 						<li>
@@ -96,30 +98,46 @@
 
 				<!--PREREQUISITES-->
 				<section>
-					<section>
+					<section data-background="#F0EBCB">
 						<h1>PreRequisites</h1>
 					</section>
 
-					<section>
-						<p>
-							Basic understanding of the Command Line
-						</p>
-						<p>
-							Ruby
-						</p>
-						<p>
-							Rails Installed
-						</p>
+					<section data-background="#F0EBCB">
 						<ul>
 							<li>
-								Linux- https://docs.docker.com/engine/installation/linux/
+								Command Line
 							</li>
+							<ul>
+								<li>
+									Terminal - Mac & Linux
+								</li>
+								<li>
+									Command Prompt - Windows
+								</li>
+							</ul>
 							<li>
-								Mac- https://docs.docker.com/docker-for-mac/
+								Linux
 							</li>
+							<ul>
+								<li>
+									https://docs.docker.com/engine/installation/linux/
+								</li>
+							</ul>
+							Mac
+						</li>
+						<ul>
 							<li>
-								PC- https://docs.docker.com/docker-for-windows/
+								https://docs.docker.com/docker-for-mac/
 							</li>
+						</ul>
+						<li>
+							PC
+						</li>
+						<ul>
+							<li>
+								https://docs.docker.com/docker-for-windows/
+							</li>
+						</ul>
 						</ul>
 					</section>
 				</section>
@@ -131,7 +149,30 @@
 						<h1>What is DevOps?</h1>
 					</section>
 					<section>
-						Give a hypothetical case about Mary and Lou....watch youtube video and sit through it
+						<p>
+							A set of practices that emphasizes the collaboration and communication of both software developers and IT professionals while automating the process of delivery.
+						</p>
+						<ul>
+							<li>
+								Building
+							</li>
+							<li>
+								Testing
+							</li>
+							<li>
+								Rapid Releases
+							</li>
+						</ul>
+
+						<div>
+							IMAGE
+						</div>
+					</section>
+					<section>
+						<img src="asset/devops.png" />
+					</section>
+					<section>
+						<img src="asset/devops2.png" />
 					</section>
 				</section>
 				<!--WHAT IS DEVOPS?-->
@@ -185,7 +226,7 @@
 
 					<section>
 						<section>
-							<h1>System Architecture Trend</h1>
+							<h1>The Trend</h1>
 						</section>
 						<section>
 							<h2>Monolithic</h2>
@@ -217,7 +258,7 @@
 							</li>
 
 							<div class="con">
-								<h2>Cons to Microservice</h2>
+								<h2>Dilemmas with Microservice</h2>
 								<ul>
 									<li>
 										Each service may have a different language or tech stack
@@ -368,6 +409,8 @@
 								</p>
 						</section>
 					</section>
+
+			
 
 					<section>
 						<section>
