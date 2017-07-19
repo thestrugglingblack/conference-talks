@@ -1,0 +1,585 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Docker + All</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" >
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- INTRO PAGE -->
+				<section data-background="#F0EBCB">
+					<h1 style="color:#AA2F2F;">Docker + All</h1>
+					<hr style="border:none; height: 8px; background-color:#AA2F2F;"/>
+					<b>
+						<a id="non-link" href="http://www.zurihunter.com">
+							Zuri Hunter
+						</a>
+					</b>
+					<span style="color:#AA2F2F !important;">
+						|
+					</span>
+					<a href="http://www.github.com/ZuriHunter">
+						<i class="fa fa-github-alt fa-1x">
+						</i>
+					</a>
+					<span style="color:#AA2F2F !important;">
+						|
+					</span>
+					<a href="http://www.twitter.com/ZuriHunter">
+						<i class="fa fa-twitter">
+						</i>
+					</a>
+					<span style="color:#AA2F2F !important;">
+						|
+					</span>
+					<a href="http://www.linkedin.com/in/zuri-hunter-748ba514/">
+						<i class="fa fa-linkedin-square">
+						</i>
+					</a>
+				</section>
+
+				<!-- AGENDA -->
+				<section data-background="#F0EBCB">
+					<h2 style="color:#AA2F2F;">Overview</h2>
+					<ul>
+						<li>
+							Prerequisites
+						</li>
+						<li>
+							What is DevOps?
+						</li>
+						<li>
+							What is Docker?
+						</li>
+						<li>
+							System Architecture Trend
+						</li>
+						<li>
+							Pros & Cons
+						</li>
+						<li>
+							Setting up Docker
+						</li>
+						<li>
+							Running Your First Container
+						</li>
+						<li>
+							Dockerizing your Application
+						</li>
+						<li>
+							Hosting an Image
+						</li>
+					</ul>
+				</section>
+				<!-- AGENDA -->
+
+				<!--PREREQUISITES-->
+				<section>
+					<section data-background="#F0EBCB">
+						<h1 style="color:#AA2F2F;">PreRequisites</h1>
+					</section>
+
+					<section data-background="#F0EBCB">
+						<h2 style="color:#AA2F2F;">Command Line</h2>
+						<ul>
+							<li>
+								Terminal - Mac & Linux
+							</li>
+							<li>
+								Command Prompt - Windows
+							</li>
+						</ul>
+					</section>
+
+					<section data-background="#F0EBCB">
+						<h2 style="color:#AA2F2F;">Docker</h2>
+						<ul>
+							<li>
+								Linux
+								<ul>
+									https://docs.docker.com/engine/installation/linux/
+								</ul>
+							</li>
+							<li>
+								Mac
+								<ul>
+									https://docs.docker.com/docker-for-mac/
+								</ul>
+							</li>
+							<li>
+								Windows
+								<ul>
+									https://docs.docker.com/docker-for-windows/
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section data-background="#F0EBCB">
+						<h2 style="color:#AA2F2F;">Languages</h2>
+						<ul>
+							<li>
+								Ruby & Rails
+							</li>
+							<li>
+								Python
+							</li>
+							<li>
+								HTML/CSS/JS
+							</li>
+						</ul>
+					</section>
+				</section>
+				<!--PREREQUISITES-->
+
+				<!--WHAT IS DEVOPS?-->
+				<section>
+					<section data-background="#F0EBCB">
+						<h1 style="color:#AA2F2F;">What is DevOps?</h1>
+					</section>
+					<section data-background="#F0EBCB">
+						<div class="left" style="padding-left: 70px; padding-right: 100px;">
+							<div class="content" style="width: 50%;">
+								<p>
+									A set of practices that emphasizes the collaboration and communication of both software developers and IT professionals while automating the process of delivery.
+								</p>
+								<ul>
+									<li>
+										Building
+									</li>
+									<li>
+										Testing
+									</li>
+									<li>
+										Rapid Releases
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="right" style="margin-top: -400px; margin-right: -100px !important; width: 100% !important;">
+							<div class="img-container right">
+								<img src="asset/devops3.png">
+							</div>
+						</div>
+					</section>
+					<section>
+						<img src="asset/devops.png" />
+					</section>
+					<section>
+						<img src="asset/devops2.png" />
+					</section>
+				</section>
+				<!--WHAT IS DEVOPS?-->
+
+				<!--WHAT IS DOCKER?-->
+				<section>
+					<section data-background="#F0EBCB">
+						<h1 style="color:#AA2F2F;">What is Docker?</h1>
+					</section>
+					<section data-background="#F0EBCB">
+						<div class="right" style="margin-right: -100px;">
+							<div class="content right" style="width:50%; text-align: right;">
+								<p>
+									<b>Docker</b> is a platform that helps developers build, ship and run any application, in any environment. Docker containers
+									wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries, etc..
+								</p>
+							</div>
+						</div>
+						<div class="left" style="margin-top: -400px; margin-left: -100px !important; width: 100% !important;">
+							<div class="img-container">
+								<img src="asset/docker.png">
+							</div>
+						</div>
+
+					</section>
+					<section data-background="#F0EBCB">
+						<div class="left"  style="padding-left: 5px; padding-right: 100px;">
+							<div class="content" style="width: 90%;">
+								<ul>
+									<li>
+										<b>Docker Inc</b>, Sponsor of Docker Platform
+									</li>
+									<li>
+										Offered as a <b>Containers as a Service</b> (CaaS)
+									</li>
+									<li>
+										<b>7 billion</b> Docker Image Downloads
+									</li>
+									<li>
+										<b>3,000</b> Contributors
+									</li>
+									<li>
+										<b>700,000</b> Applications created using Docker
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="right">
+							<div class="img-container right" style="margin-top: -350px; margin-right: -150px !important; width: 65% !important;">
+								<img src="asset/whydocker.png">
+							</div>
+						</div>
+					</section>
+					<section data-background="#F0EBCB">
+						<h1 style="color:#AA2F2F;">It is not a Virtual Machine</h1>
+					</section>
+					<section data-background="#F0EBCB">
+						<div class="left" style="padding-left: 5px; padding-right: 100px;">
+							<div class="content" style="width: 60%;">
+								<p>
+									<b>Virtual Machines (VM)</b> are software computer, like a physical computer, runs and operating system and applications
+								</p>
+								<ul>
+									<li>
+										Both provide isolated envrionment for applications to run inside.
+									</li>
+									<li>
+										Both are easily movable between differnet hosts.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="right">
+							<div class="img-container right" style="margin-top: -250px; margin-right: 50px !important; width: 100% !important;">
+								<img src="asset/notvirtual.png">
+							</div>
+						</div>
+					</section>
+				</section>
+				<!--WHAT IS DOCKER?-->
+
+					<section>
+						<section data-background="#F0EBCB">
+							<h1 style="color:#AA2F2F;">The Trend</h1>
+						</section>
+						<section data-background="#F0EBCB">
+							<div class="left">
+								<div class="content" style="width:70%; text-align: right;">
+									<h2 style="color:#AA2F2F;">Monolithic</h2>
+									<ul>
+										<li>
+											Cost a lot to run
+										</li>
+										<li>
+											Hard code base to debug and maintain
+										</li>
+										<li>
+											Unnecessary shared scope of responsibilites
+										</li>
+										<li>
+											Inflexible
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="right">
+								<div class="img-container right" style="margin-top: -250px; margin-right: -100px !important; width: 100% !important;">
+									<img src="asset/monolithic.png">
+								</div>
+							</div>
+							
+							
+						</section>
+						<section data-background="#F0EBCB">
+							<div class="right" style="margin-right: -100px; width: 50%;">
+								<div class="content">
+									<h2 style="color:#AA2F2F;">Microservice</h2>
+									<li>
+										Smaller and Easier to run
+									</li>
+									<li>
+										Each service has a clearly defined set of responsibilities
+									</li>
+									<li>
+										Easy code base to maintain
+									</li>
+									<li>
+										1 Scope = 1 Microservice
+									</li>
+								</div>
+							</div>
+
+							<div class="left">
+								<div class="img-container" style="margin-top: -250px; margin-left: -100px !important; width: 80% !important;">
+									<img src="asset/microservice.png"/>
+								</div>
+							</div>
+
+						</section>
+
+						<section data-background="#F0EBCB">
+
+							<div class="con">
+								<h2 style="color:#AA2F2F;">Dilemmas with Microservice</h2>
+								<ul>
+									<li class="fragment">
+										Each service may have a different language or tech stack
+									</li>
+									<li class="fragment">
+										Starting an application can be difficult due to the number of services needed to support the application
+									</li>
+									<li class="fragment">
+										Each service may have its own dependencies and requirements
+									</li>
+								</ul>
+							</div>
+						</section>
+
+						<section data-background="#F0EBCB">
+
+							<div class="left">
+								<div class="content">
+									<h2 style="color:#AA2F2F;">Docker's Role</h2>
+									<p>
+										Build,Run,Ship---Anywhere
+									</p>
+									<ul>
+										<li>
+											Makes it easy for developers to write code that they can run anywhere by relyong on software containers
+										</li>
+										<li>
+											Containers are light weight and portable
+										</li>
+										<li>
+											Containers share the resources of the computer running them
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="right">
+								<div class="img-container">
+									<img src="asset/dockerarch.png"/>
+								</div>
+							</div>
+						</section>
+
+					</section>
+
+					<section>
+						<section data-background="#F0EBCB">
+							<h1 style="color:#AA2F2F;"> Pros & Cons</h1>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2>Pro</h2>
+							<ul>
+								<li>
+									Well Documented
+								</li>
+								<li>
+									Over thousands of public repositories
+								</li>
+								<li>
+									Fast
+								</li>
+							</ul>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2>Cons</h2>
+							<ul>
+								<li>
+									Poor Monitoring
+								</li>
+								<li>
+									Platform dependent
+								</li>
+								<li>
+									Storage Dilemmas
+								</li>
+							</ul>
+							<!-- https://sweetcode.sio/3-pros-3-cons-working-docker-containers/ -->
+						</section>
+					</section>
+
+					<section>
+						<section data-background="#F0EBCB">
+							<h1 style="color:#AA2F2F;">Setting Up Docker</h1>
+						</section>
+						<section data-background="#F0EBCB">
+							<p>
+								Docker Hub, is a registry of Docker images. Got to this url
+							</p>
+							<code>
+								https://hub.docker.com/
+							</code>
+							<p>
+								Remember your Docker ID
+							</p>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2>Install Docker</h2>
+							<ul>
+								<li>
+									Linux- https://docs.docker.com/engine/installation/linux/
+								</li>
+								<li>
+									Mac- https://docs.docker.com/docker-for-mac/
+								</li>
+								<li>
+									PC- https://docs.docker.com/docker-for-windows/
+								</li>
+							</ul>
+						</section>
+						<section>
+							<code>docker run hello-world</code>
+						</section>
+					</section>
+
+					<section>
+						<section>
+							<h1 style="color:#AA2F2F;">Run Your 1st Container</h1>
+						</section>
+						<section>
+							<p>
+								Docker Image..are file system and configuration of our application which are used to create containers
+							</p>
+							<p>
+								Going to run Alpine. Alpine is a lightweight Linux distribution.
+							</p>
+							<code>
+								docker pull alpine
+							</code>
+							<p>
+								To see that you pulled your alpine image run:
+							</p>
+							<code>
+								docker images
+							</code>
+						</section>
+						<section>
+							<p>
+								Lets run a docker container base off of this image
+							</p>
+							<code>
+								docker run alpine ls -l
+							</code>
+							<p>
+								Looked for the image. Created a container out of that image. Ran the command within it
+							</p>
+							<p>
+								Try some linux commands like echo "Hello WWC"/ pwd / id -u -n/ cal
+							</p>
+						</section>
+						<section>
+							<p>
+								For interactivity within your container run this:
+							</p>
+							<code>
+								docker run -it alpine /bin/sh
+							</code>
+								<p>
+									ls, uname -a, cd usr
+								</p>
+						</section>
+					</section>
+
+
+
+					<section>
+						<section>
+							<h1 style="color:#AA2F2F;">Dockerizing Your Application</h1>
+							<ul>
+								<li>
+									<a>Flask</a>
+								</li>
+								<li>
+									<a>Ruby on Rails</a>
+								</li>
+								<li>
+									<a>JS/CSS/HTML</a>
+								</li>
+							</ul>
+						</section>
+
+					</section>
+
+					<section>
+						<section>
+							Docker + Flask
+						</section>
+						<section>
+							<p>
+								Open the terminal or command prompt
+							</p>
+							<p>
+								git clone REPO_NAME
+							</p>
+						</section>
+						<section>
+							dsd
+						</section>
+					</section>
+
+					<section>
+						<section>
+							Docker + Rails
+						</section>
+						<section>
+							<p>
+								clone repo
+							</p>
+							<p>
+								gem install
+							</p>
+							<p>
+								Create a file called Dockerfile. A Dockerfile is a text file that contains a list of commands that Docker calls while createSingletonNodean image.
+								This file contains all the information that Docker needs to know to run the app.
+							</p>
+						</section>
+					</section>
+
+					<section>
+						<section>
+							Docker + JS/CSS/HTML
+						</section>
+						<section>
+							dont be like me
+						</section>
+					</section>
+
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

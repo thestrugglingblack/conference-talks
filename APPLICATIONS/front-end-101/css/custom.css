@@ -16,12 +16,15 @@
 * {
   color: #ffffff;
   font-family: monospace;
+  border: 1px solid red;
 }
 
 body{
   background-image: url(../assets/stock-image.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .form-container {
@@ -29,14 +32,57 @@ body{
   text-align: center;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 form {
   height: 40%;
   padding-left: 300px;
   padding-right: 300px;
   margin-top: 50px;
-  padding-top: 10px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.subscribe-form {
+  background: black;
+  height: 30%;
+  width: 20%;
+  float: inherit;
+  opacity: .8;
+}
+
+label {
+  font-size: 25px;
+  padding: 20px 20px 20px 20px;
+}
+
+input {
+  padding: 10px 10px 10px 10px;
 }
 
 button {
   background-color: gray;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+}
+
+/* NAVBAR */
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
 }
