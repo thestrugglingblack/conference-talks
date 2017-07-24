@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8538a7f1-0616-49df-a64e-1e1b2c75d954" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker+all/index.html" afterPath="$PROJECT_DIR$/docker+all/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/README.md" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker+all/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="543" column="49" lean-forward="false" selection-start-line="543" selection-start-column="49" selection-end-line="543" selection-end-column="49" />
+            <state relative-caret-position="8085">
+              <caret line="539" column="82" lean-forward="true" selection-start-line="539" selection-start-column="82" selection-end-line="539" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#1;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -75,6 +78,36 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="94" lean-forward="false" selection-start-line="3" selection-start-column="94" selection-end-line="3" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="241" lean-forward="false" selection-start-line="3" selection-start-column="241" selection-end-line="3" selection-end-column="241" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,7 +135,6 @@
       <list>
         <option value="$PROJECT_DIR$/docker+all/css/custom.css" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/requirements.txt" />
-        <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/README.md" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/index.html" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/Dockerfile" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/app.py" />
@@ -119,16 +151,17 @@
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/Gemfile" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/scotch-blog-2/README.md" />
-        <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/Dockerfile" />
         <option value="$PROJECT_DIR$/docker+all/README.md" />
-        <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml/README.md" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml/package.json" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml/index.html" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml/Dockerfile" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/doc/OVERVIEW.md" />
         <option value="$PROJECT_DIR$/docker+all/index.html" />
+        <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/README.md" />
+        <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml/README.md" />
+        <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md" />
       </list>
     </option>
   </component>
@@ -190,6 +223,20 @@
               <item name="conference-talks" type="462c0819:PsiDirectoryNode" />
               <item name="APPLICATIONS" type="462c0819:PsiDirectoryNode" />
               <item name="docker+all" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conference-talks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conference-talks" type="462c0819:PsiDirectoryNode" />
+              <item name="APPLICATIONS" type="462c0819:PsiDirectoryNode" />
+              <item name="docker+all" type="462c0819:PsiDirectoryNode" />
+              <item name="docker+flask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conference-talks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conference-talks" type="462c0819:PsiDirectoryNode" />
+              <item name="APPLICATIONS" type="462c0819:PsiDirectoryNode" />
+              <item name="docker+all" type="462c0819:PsiDirectoryNode" />
+              <item name="docker+rails" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,12 +355,12 @@
       <workItem from="1500076578164" duration="370000" />
       <workItem from="1500078274355" duration="134000" />
       <workItem from="1500178399992" duration="5138000" />
-      <workItem from="1500426494579" duration="29304000" />
+      <workItem from="1500426494579" duration="29672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34946000" />
+    <option name="totallyTimeSpent" value="35314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="6" />
@@ -605,14 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -661,14 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -681,14 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -719,8 +742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker+all/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="543" column="49" lean-forward="false" selection-start-line="543" selection-start-column="49" selection-end-line="543" selection-end-column="49" />
+        <state relative-caret-position="8085">
+          <caret line="539" column="82" lean-forward="true" selection-start-line="539" selection-start-column="82" selection-end-line="539" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#1;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -771,6 +794,30 @@
             <element signature="n#style#0;n#h2#0;n#section#9;n#section#12;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#section#11;n#section#12;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="241" lean-forward="false" selection-start-line="3" selection-start-column="241" selection-end-line="3" selection-end-column="241" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+jscsshtml/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="94" lean-forward="false" selection-start-line="3" selection-start-column="94" selection-end-line="3" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APPLICATIONS/docker+all/docker+flask/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
