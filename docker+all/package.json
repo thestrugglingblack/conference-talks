@@ -1,8 +1,8 @@
 {
-  "name": "reveal.js",
+  "name": "Docker + All",
   "version": "3.4.1",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
+  "description": "A presentation on using Docker within web applications",
+  "homepage": "www.zurihunter/conference-talks/docker-all",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
@@ -10,13 +10,13 @@
     "start": "grunt serve"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Zuri Hunter",
+    "email": "",
+    "web": "www.zurihunter.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/ZuriHunter/conference-talks.git"
   },
   "engines": {
     "node": ">=4.0.0"
