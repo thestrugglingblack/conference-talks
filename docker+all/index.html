@@ -89,9 +89,6 @@
 						<li>
 							Dockerizing your Application
 						</li>
-						<li>
-							Hosting an Image
-						</li>
 					</ul>
 				</section>
 				<!-- AGENDA -->
@@ -728,6 +725,16 @@
 							</code>
 						</section>
 						<section data-background="#F0EBCB">
+							<code><b>docker build -t dockerrails .</b></code>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">What Happened?</h2>
+							<ol>
+								<li class="fragment">Docker finds the Dockerfile at the root of the application to build the image.</li>
+								<li class="fragment">Docker builds the image and tags it with the name "dockerrails".</li>
+							</ol>
+						</section>
+						<section data-background="#F0EBCB">
 							<code><b>docker run -p 3000:3000 dockerrails</b></code>
 						</section>
 						<section data-background="#F0EBCB">
@@ -741,32 +748,32 @@
 					</section>
 
 					<section>
-						<section>
-							Docker + JS/CSS/HTML
+						<section data-background="#F0EBCB">
+							<h1 style="color:#AA2F2F;">Docker + JS/CSS/HTML</h1>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<ol>
 								<li class="fragment">Create a docker image of the application.</li>
 								<li class="fragment">Build the docker image of the application. </li>
 								<li class="fragment">Run a container base off the image of the application. </li>
 							</ol>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<p>Open the terminal or command prompt</p>
 							<code>
-								git clone [GITHUB]
+								<b>git clone https://github.com/ZuriHunter/docker-jscsshtml.git</b>
 							</code>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<p>Open the application in the text editor</p>
 							<p>At the root of the application create a file called <b>"Dockerfile"</b>.</p>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<p><b><code>Dockerfile</code></b> is a text file that contains a list of commands that Dockers calls while creating the image. This file
 								contains all the information that Docker needs to know to run the app.</p>
 						</section>
-						<section>
-							<h2>Dockerfile Commands</h2>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">Dockerfile Commands</h2>
 							<ul class="left">
 								<li>ADD</li>
 								<li>COPY</li>
@@ -788,6 +795,37 @@
 								<li>SHELL</li>
 								<li>HEALTHCHECK</li>
 							</ul>
+						</section>
+						<section data-background="#F0EBCB">
+							<p>Add this to the Dockerfile:</p>
+							<code class="fragment">FROM kyma/docker-nginx</code><br><br>
+							<code class="fragment">ADD . /var/www
+							</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code class="fragment">EXPOSE 80</code><br><br>
+							<code class="fragment">CMD 'nginx'</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code><b>docker build -t dockerjscsshtml .</b></code>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">What Happened?</h2>
+							<ol>
+								<li class="fragment">Docker finds the Dockerfile at the root of the application to build the image.</li>
+								<li class="fragment">Docker builds the image and tags it with the name "dockerjscsshtml".</li>
+							</ol>
+						</section>
+						<section data-background="#F0EBCB">
+							<code><b>docker run -p 80:80 dockerjscsshtml</b></code>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">What Happened?</h2>
+							<ol>
+								<li class="fragment">Docker runs a container base off the image "dockerjscsshtml".</li>
+								<li class="fragment">Docker then forwards port 80 to port 80 that was exposed on the image.</li>
+							</ol>
+							<code class="fragment"><b>http://localhost:80</b></code>
 						</section>
 					</section>
 				</section>
