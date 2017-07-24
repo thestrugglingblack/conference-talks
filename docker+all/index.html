@@ -576,7 +576,7 @@
 								Open the terminal or command prompt
 							</p>
 							<code>
-								git clone https://github.com/ZuriHunter/docker-flask.git
+								<b>git clone https://github.com/ZuriHunter/docker-flask.git</b>
 							</code>
 						</section>
 						<section data-background="#F0EBCB">
@@ -652,32 +652,32 @@
 					</section>
 
 					<section>
-						<section>
-							Docker + Rails
+						<section data-background="#F0EBCB">
+							<h1 style="color:#AA2F2F;">Docker + Rails</h1>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<ol>
 								<li class="fragment">Create a docker image of the application.</li>
 								<li class="fragment">Build the docker image of the application. </li>
 								<li class="fragment">Run a container base off the image of the application. </li>
 							</ol>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<p>Open the terminal or command prompt</p>
 							<code>
-								git clone [GITHUB]
+								<b>git clone https://github.com/ZuriHunter/docker-rails.git</b>
 							</code>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<p>Open the application in the text editor</p>
 							<p>At the root of the application create a file called <b>"Dockerfile"</b>.</p>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<p><b><code>Dockerfile</code></b> is a text file that contains a list of commands that Dockers calls while creating the image. This file
 								contains all the information that Docker needs to know to run the app.</p>
 						</section>
-						<section>
-							<h2>Dockerfile Commands</h2>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">Dockerfile Commands</h2>
 							<ul class="left">
 								<li>ADD</li>
 								<li>COPY</li>
@@ -699,6 +699,44 @@
 								<li>SHELL</li>
 								<li>HEALTHCHECK</li>
 							</ul>
+						</section>
+						<section data-background="#F0EBCB">
+							<p>Add this to the Dockerfile:</p>
+							<code class="fragment">FROM ruby:2.3.3</code><br><br>
+							<code class="fragment">RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
+							</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code class="fragment">
+								COPY . application/blog
+							</code><br><br>
+							<code class="fragment">
+								WORKDIR application/blog
+							</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code class="fragment">
+								RUN bundle install && rake db:migrate
+							</code><br><br>
+							<code class="fragment">
+								EXPOSE 3000
+							</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code class="fragment">
+								CMD rails server -b 0.0.0.0
+							</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code><b>docker run -p 3000:3000 dockerrails</b></code>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">What Happened?</h2>
+							<ol>
+								<li class="fragment">Docker runs a container base off the image "dockerrails".</li>
+								<li class="fragment">Docker then forwards port 3000 to port 3000 that was exposed on the image.</li>
+							</ol>
+							<code class="fragment"><b>http://localhost:3000</b></code>
 						</section>
 					</section>
 
