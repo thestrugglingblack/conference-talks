@@ -2,60 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8538a7f1-0616-49df-a64e-1e1b2c75d954" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/assets/config/manifest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/assets/javascripts/cable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/assets/javascripts/channels/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/assets/stylesheets/application.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/channels/application_cable/channel.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/channels/application_cable/connection.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/jobs/application_job.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/mailers/application_mailer.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/models/application_record.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/views/layouts/mailer.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/views/layouts/mailer.text.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/bin/update" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/cable.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/initializers/application_controller_renderer.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/initializers/new_framework_defaults.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/puma.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/spring.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/public/apple-touch-icon-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/public/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/test/controllers/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/test/fixtures/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/test/fixtures/files/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/test/helpers/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/test/integration/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/test/mailers/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/test/models/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/test/test_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/tmp/.keep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/.gitignore" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/Gemfile" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/Gemfile.lock" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/Rakefile" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/bin/rails" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/bin/rails" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/bin/setup" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/bin/setup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/bin/spring" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/bin/spring" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config.ru" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config.ru" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/application.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/boot.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/boot.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/environment.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/environments/development.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/environments/production.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/environments/test.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/environments/test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/initializers/cookies_serializer.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/initializers/cookies_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/initializers/session_store.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/initializers/wrap_parameters.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/initializers/wrap_parameters.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/routes.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/secrets.yml" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/config/secrets.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/db/seeds.rb" afterPath="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker+all/index.html" afterPath="$PROJECT_DIR$/docker+all/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker+all/README.md" afterPath="$PROJECT_DIR$/docker+all/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker+all/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
@@ -122,6 +69,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker+all/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -159,6 +116,7 @@
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/README.md" />
         <option value="$PROJECT_DIR$/APPLICATIONS/docker+all/docker+rails/Dockerfile" />
         <option value="$PROJECT_DIR$/docker+all/index.html" />
+        <option value="$PROJECT_DIR$/docker+all/README.md" />
       </list>
     </option>
   </component>
@@ -349,17 +307,18 @@
       <workItem from="1500076578164" duration="370000" />
       <workItem from="1500078274355" duration="134000" />
       <workItem from="1500178399992" duration="5138000" />
-      <workItem from="1500426494579" duration="24196000" />
+      <workItem from="1500426494579" duration="24420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29838000" />
+    <option name="totallyTimeSpent" value="30062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="137" y="33" width="1276" height="841" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17609562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17609562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -727,6 +686,14 @@
             <element signature="n#style#0;n#h2#0;n#section#5;n#section#11;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#section#11;n#section#11;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker+all/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
