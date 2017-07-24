@@ -84,7 +84,7 @@
 							Setting up Docker
 						</li>
 						<li>
-							Running Your First Container
+							Running Your Second Container
 						</li>
 						<li>
 							Dockerizing your Application
@@ -135,6 +135,13 @@
 									https://docs.docker.com/docker-for-windows/
 								</ul>
 							</li>
+						</ul>
+					</section>
+					<section data-background="#F0EBCB">
+						<h2 style="color:#AA2F2F;">Tools</h2>
+						<ul>
+							<li>Git</li>
+							<li>Text Editor</li>
 						</ul>
 					</section>
 					<section data-background="#F0EBCB">
@@ -201,11 +208,17 @@
 					</section>
 					<section data-background="#F0EBCB">
 						<div class="right" style="margin-right: -100px;">
-							<div class="content right" style="width:50%; text-align: right;">
+							<div class="content right" style="width:50%; text-align: left;">
 								<p>
 									<b>Docker</b> is a platform that helps developers build, ship and run any application, in any environment. Docker containers
-									wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries, etc..
-								</p>
+									wrap a piece of software in a complete filesystem that contains everything needed to run:
+							</p> <!-- list the items-->
+								<ul>
+									<li>Code</li>
+									<li>Runtime</li>
+									<li>System Tools</li>
+									<li>System Libraries</li>
+								</ul>
 							</div>
 						</div>
 						<div class="left" style="margin-top: -400px; margin-left: -100px !important; width: 100% !important;">
@@ -250,21 +263,21 @@
 						<div class="left" style="padding-left: 5px; padding-right: 100px;">
 							<div class="content" style="width: 60%;">
 								<p>
-									<b>Virtual Machines (VM)</b> are software computer, like a physical computer, runs and operating system and applications
+									<b>Virtual Machines (VM)</b> are an emulation of a computer system. Like computers it has and runs its own operating system and applications to operate.
 								</p>
 								<ul>
 									<li>
-										Both provide isolated envrionment for applications to run inside.
+										Both provide isolated environment for applications to run inside.
 									</li>
 									<li>
-										Both are easily movable between differnet hosts.
+										Both are easily movable between different hosts.
 									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="right">
-							<div class="img-container right" style="margin-top: -250px; margin-right: 50px !important; width: 100% !important;">
-								<img src="asset/notvirtual.png">
+							<div class="img-container right" style="margin-top: -350px; margin-right: 50px !important; width: 50% !important;">
+								<img src="asset/vmarch.png">
 							</div>
 						</div>
 					</section>
@@ -350,7 +363,7 @@
 
 						<section data-background="#F0EBCB">
 
-							<div class="left">
+							<div class="left" style="width:50%; text-align: left; padding-top: 100px;">
 								<div class="content">
 									<h2 style="color:#AA2F2F;">Docker's Role</h2>
 									<p>
@@ -371,7 +384,7 @@
 							</div>
 
 							<div class="right">
-								<div class="img-container">
+								<div class="img-container right" style="margin-top: -475px; margin-right: -100px !important; width: 100% !important;">
 									<img src="asset/dockerarch.png"/>
 								</div>
 							</div>
@@ -384,33 +397,40 @@
 							<h1 style="color:#AA2F2F;"> Pros & Cons</h1>
 						</section>
 						<section data-background="#F0EBCB">
-							<h2>Pro</h2>
-							<ul>
-								<li>
-									Well Documented
-								</li>
-								<li>
-									Over thousands of public repositories
-								</li>
-								<li>
-									Fast
-								</li>
-							</ul>
-						</section>
-						<section data-background="#F0EBCB">
-							<h2>Cons</h2>
-							<ul>
-								<li>
-									Poor Monitoring
-								</li>
-								<li>
-									Platform dependent
-								</li>
-								<li>
-									Storage Dilemmas
-								</li>
-							</ul>
-							<!-- https://sweetcode.sio/3-pros-3-cons-working-docker-containers/ -->
+							<div class="left">
+								<div class="content left fragment">
+									<h1 style="color:#AA2F2F;">Pro</h1>
+									<ul>
+										<li>
+											Well Documented
+										</li>
+										<li>
+											Over thousands of public repositories
+										</li>
+										<li>
+											Fast
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="right">
+								<div class="content right fragment">
+									<h1 style="text-align: left; color:#AA2F2F;">Cons</h1>
+									<ul>
+										<li>
+											Poor Monitoring
+										</li>
+										<li>
+											Platform dependent
+										</li>
+										<li>
+											Storage Dilemmas
+										</li>
+									</ul>
+									<!-- https://sweetcode.sio/3-pros-3-cons-working-docker-containers/ -->
+								</div>
+							</div>
+
 						</section>
 					</section>
 
@@ -420,90 +440,114 @@
 						</section>
 						<section data-background="#F0EBCB">
 							<p>
-								Docker Hub, is a registry of Docker images. Got to this url
+								<b>Docker Hub</b>, is a registry of Docker images.
 							</p>
-							<code>
+							<code class="fragment">
 								https://hub.docker.com/
 							</code>
-							<p>
-								Remember your Docker ID
-							</p>
 						</section>
 						<section data-background="#F0EBCB">
-							<h2>Install Docker</h2>
+							<h2 style="color:#AA2F2F;">Install Docker</h2>
 							<ul>
 								<li>
-									Linux- https://docs.docker.com/engine/installation/linux/
+									Linux
+									<ul>
+										https://docs.docker.com/engine/installation/linux/
+									</ul>
 								</li>
 								<li>
-									Mac- https://docs.docker.com/docker-for-mac/
+									Mac
+									<ul>
+										https://docs.docker.com/docker-for-mac/
+									</ul>
 								</li>
 								<li>
-									PC- https://docs.docker.com/docker-for-windows/
+									Windows
+									<ul>
+										https://docs.docker.com/docker-for-windows/
+									</ul>
 								</li>
 							</ul>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<code>docker run hello-world</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">What Happened?</h2>
+							<ol>
+								<li class="fragment">"<b>Run</b>" command creates a container base off the image.</li>
+								<li class="fragment">Couldn't find the "hello-world" it went to Docker Hub and "<b>pulled</b>" the image.</li>
+								<li class="fragment">Docker streamed that output into your terminal</li>
+							</ol>
 						</section>
 					</section>
 
 					<section>
-						<section>
-							<h1 style="color:#AA2F2F;">Run Your 1st Container</h1>
+						<section data-background="#F0EBCB">
+							<h1 style="color:#AA2F2F;">Run Your 2nd Container</h1>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
+							<code><b>Docker Image</b></code> <br>
+							<i class="fragment">
+								Is a file system and configuration of our application which are used to create containers.
+							</i>
+						</section>
+						<section data-background="#F0EBCB">
 							<p>
-								Docker Image..are file system and configuration of our application which are used to create containers
+								<b>Alpine</b> is a lightweight Linux distribution.
 							</p>
-							<p>
-								Going to run Alpine. Alpine is a lightweight Linux distribution.
-							</p>
-							<code>
+							<code class="fragment">
 								docker pull alpine
 							</code>
-							<p>
-								To see that you pulled your alpine image run:
-							</p>
-							<code>
-								docker images
-							</code>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
 							<p>
 								Lets run a docker container base off of this image
 							</p>
-							<code>
+							<code class="fragment">
 								docker run alpine ls -l
 							</code>
-							<p>
-								Looked for the image. Created a container out of that image. Ran the command within it
-							</p>
-							<p>
-								Try some linux commands like echo "Hello WWC"/ pwd / id -u -n/ cal
-							</p>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">What Happened?</h2>
+							<ol>
+								<li class="fragment">Docker daemon <b>pulls</b> the "Alpine" image from Docker Hub. </li>
+								<li class="fragment"><b>Generates</b> a container base off the Alpine image.</li>
+								<li class="fragment">Executes the command within the container.</li>
+							</ol>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">Try this:</h2>
+							<p> docker run alpine [COMMAND]</p>
+							<code class="fragment">echo "Hello WWC"</code><br>
+							<code class="fragment">pwd</code><br>
+							<code class="fragment">id -u -n</code><br>
+							<code class="fragment">cal</code>
+						</section>
+
+						<section data-background="#F0EBCB">
 							<p>
-								For interactivity within your container run this:
+								To interact within the docker container:
 							</p>
 							<code>
 								docker run -it alpine /bin/sh
 							</code>
-								<p>
-									ls, uname -a, cd usr
-								</p>
+							<ul>
+								<li>ls</li>
+								<li>uname -a</li>
+								<li>cd usr</li>
+							</ul>
 						</section>
 					</section>
 
 
 
 					<section>
-						<section>
+						<section data-background="#F0EBCB" >
 							<h1 style="color:#AA2F2F;">Dockerizing Your Application</h1>
 							<ul>
 								<li>
-									<a>Flask</a>
+									<a href="http://localhost:8000/#/10">Flask</a>
 								</li>
 								<li>
 									<a>Ruby on Rails</a>
@@ -517,19 +561,93 @@
 					</section>
 
 					<section>
-						<section>
-							Docker + Flask
+						<section data-background="#F0EBCB">
+							<h1 style="color:#AA2F2F;">Docker + Flask</h1>
 						</section>
-						<section>
+						<section data-background="#F0EBCB">
+							<ol>
+								<li class="fragment">Create a docker image of the application.</li>
+								<li class="fragment">Build the docker image of the application. </li>
+								<li class="fragment">Run a container base off the image of the application. </li>
+							</ol>
+						</section>
+						<section data-background="#F0EBCB">
 							<p>
 								Open the terminal or command prompt
 							</p>
-							<p>
-								git clone REPO_NAME
-							</p>
+							<code>
+								git clone https://github.com/ZuriHunter/docker-flask.git
+							</code>
 						</section>
-						<section>
-							dsd
+						<section data-background="#F0EBCB">
+							<p>Open the application in the text editor.</p>
+							<p>At the root of the application create a file called <b>"Dockerfile"</b>.</p>
+						</section>
+						<section data-background="#F0EBCB">
+							<p><b><code>Dockerfile</code></b> is a text file that contains a list of commands that Dockers calls while creating the image. This file
+								contains all the information that Docker needs to know to run the app.</p>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">Dockerfile Commands</h2>
+							<ul class="left">
+								<li>ADD</li>
+								<li>COPY</li>
+								<li>FROM</li>
+								<li>CMD</li>
+								<li>LABEL</li>
+								<li>EXPOSE</li>
+								<li>ENV</li>
+								<li>ENTRYPOINT</li>
+								<li>VOLUME</li>
+							</ul>
+							<ul class="right">
+								<li>USER</li>
+								<li>ARG</li>
+								<li>WORKDIR</li>
+								<li>ONBUILD</li>
+								<li>ARG</li>
+								<li>STOPSIGNAL</li>
+								<li>SHELL</li>
+								<li>HEALTHCHECK</li>
+							</ul>
+						</section>
+						<section data-background="#F0EBCB">
+							<p>Add this to the Dockerfile:</p>
+							<code class="fragment">FROM alpine:3.5</code><br><br>
+							<code class="fragment">RUN apk add --update py2-pip</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code class="fragment">COPY requirements.txt /usr/src/app/</code><br><br>
+							<code class="fragment">RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code class="fragment">COPY app.py /usr/src/app/</code><br><br>
+							<code class="fragment">COPY templates/index.html /usr/src/app/templates/</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code class="fragment">EXPOSE 5000</code><br><br>
+							<code class="fragment">CMD ["python", "/usr/src/app/app.py"]</code>
+						</section>
+						<section data-background="#F0EBCB">
+							<code><b>docker build -t dockerflask .</b></code>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">What Happened?</h2>
+							<ol>
+								<li class="fragment">Docker finds the Dockerfile at the root of the application to build the image.</li>
+								<li class="fragment">Docker builds the image and tags it with the name "dockerflask".</li>
+							</ol>
+						</section>
+						<section data-background="#F0EBCB">
+							<code><b>docker run -p 8888:5000 dockerflask</b></code>
+						</section>
+						<section data-background="#F0EBCB">
+							<h2 style="color:#AA2F2F;">What Happened?</h2>
+							<ol>
+								<li class="fragment">Docker runs a container base off the image "dockerflask".</li>
+								<li class="fragment">Docker then forwards port 8888 to port 5000 that was exposed on the image.</li>
+							</ol>
+							<code class="fragment"><b>http://localhost:8888</b></code>
 						</section>
 					</section>
 
@@ -538,16 +656,49 @@
 							Docker + Rails
 						</section>
 						<section>
-							<p>
-								clone repo
-							</p>
-							<p>
-								gem install
-							</p>
-							<p>
-								Create a file called Dockerfile. A Dockerfile is a text file that contains a list of commands that Docker calls while createSingletonNodean image.
-								This file contains all the information that Docker needs to know to run the app.
-							</p>
+							<ol>
+								<li class="fragment">Create a docker image of the application.</li>
+								<li class="fragment">Build the docker image of the application. </li>
+								<li class="fragment">Run a container base off the image of the application. </li>
+							</ol>
+						</section>
+						<section>
+							<p>Open the terminal or command prompt</p>
+							<code>
+								git clone [GITHUB]
+							</code>
+						</section>
+						<section>
+							<p>Open the application in the text editor</p>
+							<p>At the root of the application create a file called <b>"Dockerfile"</b>.</p>
+						</section>
+						<section>
+							<p><b><code>Dockerfile</code></b> is a text file that contains a list of commands that Dockers calls while creating the image. This file
+								contains all the information that Docker needs to know to run the app.</p>
+						</section>
+						<section>
+							<h2>Dockerfile Commands</h2>
+							<ul class="left">
+								<li>ADD</li>
+								<li>COPY</li>
+								<li>FROM</li>
+								<li>CMD</li>
+								<li>LABEL</li>
+								<li>EXPOSE</li>
+								<li>ENV</li>
+								<li>ENTRYPOINT</li>
+								<li>VOLUME</li>
+							</ul>
+							<ul class="right">
+								<li>USER</li>
+								<li>ARG</li>
+								<li>WORKDIR</li>
+								<li>ONBUILD</li>
+								<li>ARG</li>
+								<li>STOPSIGNAL</li>
+								<li>SHELL</li>
+								<li>HEALTHCHECK</li>
+							</ul>
 						</section>
 					</section>
 
@@ -556,10 +707,51 @@
 							Docker + JS/CSS/HTML
 						</section>
 						<section>
-							dont be like me
+							<ol>
+								<li class="fragment">Create a docker image of the application.</li>
+								<li class="fragment">Build the docker image of the application. </li>
+								<li class="fragment">Run a container base off the image of the application. </li>
+							</ol>
+						</section>
+						<section>
+							<p>Open the terminal or command prompt</p>
+							<code>
+								git clone [GITHUB]
+							</code>
+						</section>
+						<section>
+							<p>Open the application in the text editor</p>
+							<p>At the root of the application create a file called <b>"Dockerfile"</b>.</p>
+						</section>
+						<section>
+							<p><b><code>Dockerfile</code></b> is a text file that contains a list of commands that Dockers calls while creating the image. This file
+								contains all the information that Docker needs to know to run the app.</p>
+						</section>
+						<section>
+							<h2>Dockerfile Commands</h2>
+							<ul class="left">
+								<li>ADD</li>
+								<li>COPY</li>
+								<li>FROM</li>
+								<li>CMD</li>
+								<li>LABEL</li>
+								<li>EXPOSE</li>
+								<li>ENV</li>
+								<li>ENTRYPOINT</li>
+								<li>VOLUME</li>
+							</ul>
+							<ul class="right">
+								<li>USER</li>
+								<li>ARG</li>
+								<li>WORKDIR</li>
+								<li>ONBUILD</li>
+								<li>ARG</li>
+								<li>STOPSIGNAL</li>
+								<li>SHELL</li>
+								<li>HEALTHCHECK</li>
+							</ul>
 						</section>
 					</section>
-
 				</section>
 			</div>
 		</div>
