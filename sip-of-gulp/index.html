@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sip of Gulp</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" >
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background="#F26925">
+					<h1 style="color:#CFD1D0">Sip of Gulp</h1>
+					<hr style="border:none; height: 8px; background-color:#333333;"/>
+					<b>
+						<a style="color:#CFD1D0 !important;" id="non-link" href="http://www.zurihunter.com">
+							Zuri Hunter
+						</a>
+					</b>
+					<span style="color:#333333 !important;">
+						|
+					</span>
+					<a href="http://www.github.com/ZuriHunter">
+						<i class="fa fa-github-alt fa-1x">
+						</i>
+					</a>
+					<span style="color:#333333 !important;">
+						|
+					</span>
+					<a href="http://www.twitter.com/ZuriHunter">
+						<i class="fa fa-twitter">
+						</i>
+					</a>
+					<span style="color:#333333 !important;">
+						|
+					</span>
+					<a href="http://www.linkedin.com/in/zuri-hunter-748ba514/">
+						<i class="fa fa-linkedin-square">
+						</i>
+					</a>
+				</section>
+
+				<section data-background="#333333">
+					<h2 style="color: #CFD1D0;">Overview</h2>
+					<ul>
+						<li>Task Runners</li>
+						<li>What is Gulp?</li>
+						<li>Core API</li>
+						<li>Best Practices</li>
+						<li>Live Demo</li>
+					</ul>
+				</section>
+
+				<section>
+					<section data-background="#F26925">
+						<h1 style="color:#CFD1D0;">Task Runners</h1>
+					</section>
+					<section data-background="#333333">
+						<div class="left">
+							<div class="content">
+								<p>
+									It is an automation library that is needed for:
+								</p>
+								<ul>
+									<li>
+										Minification
+									</li>
+									<li>
+										Concatenation
+									</li>
+									<li>
+										Vendors Prefixes
+									</li>
+									<li>
+										CSS Compilation
+									</li>
+									<li>
+										Optimizing 3rd Party Libraries
+									</li>
+									<li>
+										File Injection
+									</li>
+									<li>
+										Template Caching
+									</li>
+									<li>
+										Testing
+									</li>
+									<li>
+										Code Analysis
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="right" style="margin-top: -400px; margin-right: 0px !important; width: 100% !important;">
+							<div class="img-container right">
+								<img src="asset/gulp.png">
+							</div>
+						</div>
+					</section>
+					<section data-background="#333333">
+						<h2 style="margin-top: -250px; color: #CFD1D0;">Task Runners Role</h2>
+						<div class="fragment" id="trioone">
+							Continuous Integration
+						</div>
+						<div class="fragment" id="triotwo">
+							Development
+						</div>
+						<div class="fragment" id="triothree">
+							Testing
+						</div>
+
+					</section>
+					<section data-background="#333333">
+						<div class="left">
+							<div class="content" style="margin-top: 100px;">
+								<h2 style="color: #CFD1D0;">Basic Task Pipeline</h2>
+								<ol>
+									<li>
+										Gather all files from the source.
+									</li><br />
+									<li>
+										Change or alter those files.
+									</li><br />
+									<li>
+										Send those modified files to the destination.
+									</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="right" style="margin-top: -325px; margin-right: 0px !important; width: 45% !important;">
+							<div class="img-container right">
+								<img src="asset/taskpipeline.png">
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#F26925">
+						<h1 style="color:#CFD1D0;">What is Gulp?</h1>
+					</section>
+					<section data-background="#333333">
+						<div class="left">
+							<div class="content" style="width: 55%;">
+								<p>
+									An automation tool that assists with automated build pipeline
+								</p>
+								<ul>
+									<li>
+										Maintain Code Quality
+									</li>
+									<li>
+										Fast Delivery
+									</li>
+									<li>
+										Consistent & Repeatable
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="right" style="margin-top: -300px; margin-right: -150px !important; width: 120% !important;">
+							<div class="img-container right">
+								<img src="asset/buildpipe.png">
+							</div>
+						</div>
+
+					</section>
+					<section data-background="#333333">
+						<div class="left">
+							<div class="content">
+								<ul>
+									<li>
+										Code over configuration
+									</li><br />
+									<li>
+										Stream Based
+									</li><br />
+									<li>
+										1100+ plugins
+									</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="right" style="margin-top: -200px; margin-right: -100px !important; width: 120% !important;">
+							<div class="img-container right">
+								<img src="asset/gulpflow.png">
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#F26925">
+						<h1 style="color:#CFD1D0;">Core API</h1>
+					</section>
+					<section data-background="#333333">
+						<div class="left">
+							<div class="content" style="width:80%;">
+								<b><code style="font-size: 40px; color: #F26925 !important;">
+									gulp.task(name, [dependencies], fn)
+								</code></b> <br /><br />
+								<ul>
+									<li>
+										Testing and Linting
+									</li><br />
+									<li>
+										Optimize Files
+									</li><br />
+									<li>
+										Serve Application
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="right" style="margin-right:-245px; margin-top: -250px;">
+							<div class="content">
+								<pre>
+									<code class="javascript hljs" data-trim style="width:80% !important;">
+#DEFINE A TASK
+gulp.task("copy:fonts", function(){ //THIS LINE
+	return gulp
+		.src('./src/js/*.js')
+		.pipe(concat())
+		.dest('./dist/')
+})
+									</code>
+								</pre>
+							</div>
+						</div>
+					</section>
+
+					<section data-background="#333333">
+						<div class="left">
+							<div class="content" style="width:80%;">
+								<b><code style="font-size: 40px; color: #F26925 !important;">
+									gulp.src(glob, [options])
+								</code></b> <br /><br />
+								<ul>
+									<li>
+										Testing and Linting
+									</li><br />
+									<li>
+										Optimization
+									</li><br />
+									<li>
+										Modification
+									</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="right" style="margin-right:-245px; margin-top: -250px;">
+							<div class="content">
+								<pre>
+									<code class="javascript hljs" data-trim style="width:80% !important;">
+#READ FILES
+gulp.task("copy:fonts", function(){
+	return gulp
+		.src('./src/js/*.js') //THIS LINE
+		.pipe(concat())
+		.dest('./dist/')
+})
+									</code>
+								</pre>
+							</div>
+						</div>
+					</section>
+					<section data-background="#333333">
+						<div class="left">
+							<div class="content" style="width:80%;">
+								<b><code style="font-size: 40px; color: #F26925 !important;">
+									gulp.dest(folder, [options])
+								</code></b> <br /><br />
+								<ul>
+									<li>
+										Write Files
+									</li><br />
+									<li>
+										Different Destination of Source File
+									</li><br />
+									<li>
+										Same or New File
+									</li>
+								</ul>
+								</div>
+							</div>
+
+						<div class="right" style="margin-right:-245px; margin-top: -250px;">
+							<div class="content">
+								<pre>
+									<code class="javascript hljs" data-trim style="width:80% !important;">
+#WRITE THE FILES
+gulp.task("copy:fonts", function(){
+	return gulp
+		.src('./src/js/*.js')
+		.pipe(concat())
+		.dest('./dist/') //THIS LINE
+})
+									</code>
+								</pre>
+							</div>
+						</div>
+					</section>
+					<section data-background="#333333">
+						<div class="left">
+							<div class="content" style="width:80%;">
+								<b><code style="font-size: 40px; color: #F26925 !important;">
+									gulp.watch(glob, [options], tasks or cb)
+								</code></b><br /><br /><br />
+								<ul>
+									<li>
+										Run Tests
+									</li><br />
+									<li>
+										Linting
+									</li><br />
+									<li>
+										Recompile CSS
+									</li>
+								</ul>
+								</div>
+							</div>
+
+						<div class="right" style="margin-right:-245px; margin-top: -250px;">
+							<div class="content">
+								<pre>
+									<code class="javascript hljs" data-trim style="width:90% !important;">
+#WATCH THE FILES
+gulp.task("lint", function(){
+ return gulp
+   .watch('./src/js/*.js', ['scss-compile']); //THIS LINE
+});
+									</code>
+								</pre>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#F26925">
+						<h1 style="color:#CFD1D0;">Best Practices</h1>
+					</section>
+					<section data-background="#333333">
+						<h2>1. Automate all Imports</h2>
+						<ul>
+							<li>
+								inject
+							</li>
+							<li>
+								wiredep
+							</li>
+							<li>
+								useref
+							</li>
+							<li>
+								angular-file-sort
+							</li>
+						</ul>
+					</section>
+					<section data-background="#333333">
+						<h2>2. Establish directory structure</h2>
+						<ul>
+							<li>
+								Source Code is not the same code served in browser
+							</li>
+							<li>
+								Production source code is minified and concatentated
+							</li>
+						</ul>
+						<code>
+├── .tmp
+│   ├── app.css
+│   ├── app.js
+│   ├── header.html
+│   └── index.html
+├── bower_components
+│   └── angular
+├── dist
+│   ├── app.min.css
+│   ├── app.min.js
+│   └── index.html
+└── src
+    ├── app.scss
+    ├── app.ts
+    ├── components
+    ├── header.jade
+    ├── index.html
+    └── shared
+						</code>
+					</section>
+					<section data-background="#333333">
+						<h2>3. Production Build & Development Build</h2>
+						<ul>
+							<li>
+								browser-sync
+							</li>
+							<li>
+								gulp serve vs. gulp serve:dist
+							</li>
+						</ul>
+					</section>
+					<section data-background="#333333">
+						<h2>4. Inject files</h2>
+						<ul>
+							<li>
+								gulp-inject
+							</li>
+							<li>
+								wiredep
+							</li>
+						</ul>
+					</section>
+					<section data-background="#333333">
+						<h2>5. Use gulp-useref for Production builds</h2>
+						<ul>
+							<li>
+								Concatenation
+							</li>
+							<li>
+								Minification
+							</li>
+						</ul>
+					</section>
+					<section data-background="#333333">
+						<h2>6. Separate tasks in separate files</h2>
+						<ul>
+							<li>
+								require-dir
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Live Demo</h1>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
