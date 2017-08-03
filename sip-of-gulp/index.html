@@ -243,7 +243,7 @@
 								<pre>
 									<code class="javascript hljs" data-trim style="width:80% !important;">
 #DEFINE A TASK
-gulp.task("copy:fonts", function(){ //THIS LINE
+gulp.task("copy:js", function(){ //THIS LINE
 	return gulp
 		.src('./src/js/*.js')
 		.pipe(concat())
@@ -281,7 +281,7 @@ gulp.task("copy:fonts", function(){ //THIS LINE
 								<pre>
 									<code class="javascript hljs" data-trim style="width:80% !important;">
 #READ FILES
-gulp.task("copy:fonts", function(){
+gulp.task("copy:js", function(){
 	return gulp
 		.src('./src/js/*.js') //THIS LINE
 		.pipe(concat())
@@ -317,7 +317,7 @@ gulp.task("copy:fonts", function(){
 								<pre>
 									<code class="javascript hljs" data-trim style="width:80% !important;">
 #WRITE THE FILES
-gulp.task("copy:fonts", function(){
+gulp.task("copy:js", function(){
 	return gulp
 		.src('./src/js/*.js')
 		.pipe(concat())
@@ -353,9 +353,9 @@ gulp.task("copy:fonts", function(){
 								<pre>
 									<code class="javascript hljs" data-trim style="width:90% !important;">
 #WATCH THE FILES
-gulp.task("lint", function(){
+gulp.task("watch:scss", function(){
  return gulp
-   .watch('./src/js/*.js', ['scss-compile']); //THIS LINE
+   .watch('./src/scss/*.scss', ['scss-compile']); //THIS LINE
 });
 									</code>
 								</pre>
@@ -368,34 +368,51 @@ gulp.task("lint", function(){
 					<section data-background="#F26925">
 						<h1 style="color:#CFD1D0;">Best Practices</h1>
 					</section>
+					<!-- http://blog.rangle.io/angular-gulp-bestpractices/ -->
 					<section data-background="#333333">
-						<h2>1. Automate all Imports</h2>
-						<ul>
-							<li>
-								inject
-							</li>
-							<li>
-								wiredep
-							</li>
-							<li>
-								useref
-							</li>
-							<li>
-								angular-file-sort
-							</li>
-						</ul>
+						<!-- <div class="left"> -->
+							<!-- <div class="content"> -->
+								<b><p>1. Automate all Imports</p></b>
+								<ul>
+									<li>
+										inject
+									</li>
+									<li>
+										wiredep
+									</li>
+									<li>
+										useref
+									</li>
+									<li>
+										angular-file-sort
+									</li>
+								</ul>
+							<!-- </div> -->
+						<!-- </div> -->
+
+						<!-- <div class="right">
+							SOME IMAGE
+						</div> -->
+
 					</section>
 					<section data-background="#333333">
-						<h2>2. Establish directory structure</h2>
-						<ul>
-							<li>
-								Source Code is not the same code served in browser
-							</li>
-							<li>
-								Production source code is minified and concatentated
-							</li>
-						</ul>
-						<code>
+						<div class="left" style="margin-top: 65px !important;">
+							<div class="content" style="width:60%;">
+								<b><p>2. Establish directory structure</p></b>
+								<ul>
+									<li>
+										Source Code is not the same code served in browser
+									</li>
+									<li>
+										Production source code is minified and concatentated
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="right" style="margin-right:-245px; margin-top: -335px;">
+							<pre style="width:43% !important;">
+								<code class="javascript hljs" data-trim style="max-height: 100%;">
 ├── .tmp
 │   ├── app.css
 │   ├── app.js
@@ -414,48 +431,157 @@ gulp.task("lint", function(){
     ├── header.jade
     ├── index.html
     └── shared
+								</code>
+							</pre>
+						</div>
+
+						<code>
+
 						</code>
 					</section>
 					<section data-background="#333333">
-						<h2>3. Production Build & Development Build</h2>
-						<ul>
-							<li>
-								browser-sync
-							</li>
-							<li>
-								gulp serve vs. gulp serve:dist
-							</li>
-						</ul>
+						<div class="left">
+							<div class="content" style="width:70%; padding-right: 100px;">
+								<b><p>3. Production Build & Development Build</p></b>
+								<ul>
+									<li>
+										browser-sync
+									</li>
+									<li>
+										gulp serve vs. gulp serve:dist
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="right" style="margin-right:-245px; ">
+							<pre style="width:59% !important; margin-top: -270px;">
+								<code class="javascript hljs" data-trim style="max-height: 100%;">
+gulp.task('serve', [
+  'inject:tmp',
+  'watch-scss'
+], function() {
+  browserSyncInit([
+    path.join(config.tmp, 'serve/'),
+    './'
+  ]);
+});
+gulp.task('serve:dist', [
+  'build',
+  'watch-scss'
+], function() {
+  browserSyncInit([
+    config.dist,
+    config.base
+  ]);
+});
+								</code>
+							</pre>
+						</div>
+
 					</section>
 					<section data-background="#333333">
-						<h2>4. Inject files</h2>
-						<ul>
-							<li>
-								gulp-inject
-							</li>
-							<li>
-								wiredep
-							</li>
-						</ul>
+						<div class="left">
+							<div class="content">
+								<b><p>4. Inject files</p></b>
+							</div>
+						</div>
+
+						<div class="right">
+							<pre>
+								<code class="hljs dust" data-trim>
+&lt;!doctype html&gt;
+ &lt;html&gt;
+  &lt;head&gt;
+   <script src="/some-script.js"></script>
+  &lt;/head&gt;
+ &lt;body ng-app&gt;
+<!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:css({.tmp/serve,src}) styles/app.css -->
+<!-- inject:css -->
+<!-- endinject -->
+<!-- endbuild -->
+ &lt;/body&gt;
+ &lt;/html&gt;
+								</code>
+							</pre>
+						</div>
+
 					</section>
 					<section data-background="#333333">
-						<h2>5. Use gulp-useref for Production builds</h2>
-						<ul>
-							<li>
-								Concatenation
-							</li>
-							<li>
-								Minification
-							</li>
-						</ul>
+						<div class="left">
+							<div class="content">
+								<b><p>5. Use gulp-useref for Production builds</p></b>
+								<ul>
+									<li>
+										Concatenation
+									</li>
+									<li>
+										Minification
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="right">
+							<pre>
+								<code class="hljs javascript" data-trim>
+gulp.task('optimize',['inject', 'fonts'], function () {
+ return gulp
+  .src(config.tmp + 'serve/index.html')
+  .pipe($.plumber ())
+  .pipe($.useref())
+  .pipe(jsFilter)
+  .pipe($.uglify())
+  .pipe(jsFilter.restore)
+  .pipe(cssFilter)
+  .pipe($.cleanCss())
+  .pipe(cssFilter.restore)
+  .pipe(gulp.dest(config.dist));
+});
+								</code>
+							</pre>
+						</div>
+
 					</section>
 					<section data-background="#333333">
-						<h2>6. Separate tasks in separate files</h2>
-						<ul>
-							<li>
-								require-dir
-							</li>
-						</ul>
+						<div class="left">
+							<div class="content">
+								<b><p>6. Separate tasks in separate files</p></b>
+								<ul>
+									<li>
+										require-dir
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="right">
+							<pre>
+								<code class="hljs javascript" data-trim>
+//gulpfile.js
+'use strict';
+var gulp = require('gulp');
+require('require-dir')('gulpTasks');
+/**
+ * Default task clean temporaries directories
+ * and launch the main optimization
+ * build task.
+ */
+gulp.task('default', [
+  'clean'
+], function() {
+  gulp.start('build');
+});
+								</code>
+							</pre>
+						</div>
+
 					</section>
 				</section>
 
