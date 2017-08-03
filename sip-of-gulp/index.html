@@ -246,7 +246,7 @@
 gulp.task("copy:js", function(){ //THIS LINE
 	return gulp
 		.src('./src/js/*.js')
-		.pipe(concat())
+		.pipe(concat("app.js"))
 		.dest('./dist/')
 })
 									</code>
@@ -284,7 +284,7 @@ gulp.task("copy:js", function(){ //THIS LINE
 gulp.task("copy:js", function(){
 	return gulp
 		.src('./src/js/*.js') //THIS LINE
-		.pipe(concat())
+		.pipe(concat("app.js"))
 		.dest('./dist/')
 })
 									</code>
@@ -320,7 +320,7 @@ gulp.task("copy:js", function(){
 gulp.task("copy:js", function(){
 	return gulp
 		.src('./src/js/*.js')
-		.pipe(concat())
+		.pipe(concat("app.js"))
 		.dest('./dist/') //THIS LINE
 })
 									</code>
