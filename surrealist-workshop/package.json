@@ -1,8 +1,8 @@
 {
-  "name": "A Sip Of Gulp",
+  "name": "Surrealist-Workshop",
   "version": "3.5.0",
-  "description": "This is a presentation on usage of Gulp, the task runner",
-  "homepage": "www.zurihunter/conference-talks/sip-of-gulp",
+  "description": "This is a presentation by Terian Koscik",
+  "homepage": "www.zurihunter/conference-talks/surrealist-workshop",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
@@ -11,13 +11,13 @@
     "build": "grunt"
   },
   "author": {
-    "name": "Zuri Hunter",
-    "email": "zurihunter92@gmail.com",
-    "web": "http://www.zurihunter.com"
+    "name": "Terian Koscik",
+    "email": "",
+    "web": "http://pineconedoesthings.com/surreal.html"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZuriHunter/conference-talks.git"
+    "url": "git://github.com/ZuriHunter/conference-talks.git"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -40,8 +40,5 @@
     "node-sass": "~3.13.0",
     "socket.io": "^1.4.8"
   },
-  "license": "MIT",
-  "dependencies": {
-    "font-awesome": "^4.7.0"
-  }
+  "license": "MIT"
 }
