@@ -1,0 +1,45 @@
+<%= form_for(contact) do |f| %>
+  <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="col m6">
+  <div class="input-field">
+    <%= f.label :firstname, "First Name" %>
+    <%= f.text_field :firstname %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :lastname, "Last Name" %>
+    <%= f.text_field :lastname %>
+  </div>
+</div>
+
+
+  <div class="input-field">
+    <%= f.label :email, "Email Address" %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :phonenumber, "Phone Number" %>
+    <%= f.text_field :phonenumber %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :address, "Address" %>
+    <%= f.text_area :address, {:class => "materialize-textarea"}%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit :class => "waves-effect waves-light btn" %>
+  </div>
+<% end %>

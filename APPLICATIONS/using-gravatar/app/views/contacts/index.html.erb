@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+<h1 class="center">My Contacts</h1>
+<div class="row">
+  <% @contacts.each do |contact| %>
+  <div class="col s12 m6">
+    <div class="card medium sticky-action">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="images/office.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4"><%= contact.firstname %> <%= contact.lastname %><i class="material-icons right">more_vert</i></span>
+        <p><%= link_to 'Show', contact %></p>
+      </div>
+      <div class="card-action" style="height: 100px !important;">
+        <p>
+          <%= link_to 'Show', contact %><%= link_to 'Edit', edit_contact_path(contact) %><%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Contact Information<i class="material-icons right">close</i></span>
+          <br />
+          <h4><%=contact.firstname %> <%= contact.lastname%> </h4>
+          <p>
+            <%= contact.address %>
+          </p>
+          <p>
+            <%= contact.phonenumber%> | <%= contact.email %>
+          </p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
