@@ -9,4 +9,4 @@ This repository will serve as my destination where I will hold talks that will f
 * [Front-End 101](http://www.zurihunter.com/conference-talks/front-end-101)
 * [Sip of Gulp](http://www.zurihunter.com/conference-talks/sip-of-gulp)
 * [Surrealist Workshop By Terian Koscik](http://www.zurihunter.com/conference-talks/surrealist-workshop)
-* [Using Gravatar](http://www.zurihunter/conference-talks/using_gravatar)
+* [Using Gravatar](http://www.zurihunter.com/conference-talks/using_gravatar)
