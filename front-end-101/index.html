@@ -84,7 +84,7 @@
 								Basic of JavaScript
 							</li>
 							<li>
-								Landing Page
+								Classic To-Do List
 							</li>
 						</ul>
 					</div>
@@ -947,11 +947,11 @@ function someFunction (parameter){
 				<!-- LANDING PAGE -->
 				<section>
 					<section data-background="#00263D">
-						<h1 style="text-align: left;">Landing Page</h1>
+						<h1 style="text-align: left;">Classic To Do List</h1>
 						<hr style="border:none; height: 8px; background-color:#D2202F;"/>
 					</section>
 					<section data-background="#6B818D">
-						What we are creating
+						<img src="assets/todolist.gif" />
 
 					</section>
 					<section>
@@ -995,13 +995,194 @@ function someFunction (parameter){
 						</code>
 					</section>
 					<section data-background="#6B818D">
-						Add HTML
+						<h3>Add HTML</h3>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px;">
+&lt;!doctype html&gt;
+ &lt;html&gt;
+ <title> Front-End 101</title>
+ &lt;head&gt;
+  <link rel="stylesheet" href="css/custom.css">
+  &lt;script src="js/custom.js"&gt;&lt;/script&gt;
+ &lt;/head&gt;
+
+ &lt;body&gt;
+	&lt;!--- INSERT TODO HTML HERE ---&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+						</code>
+						</pre>
 					</section>
+
+					<section data-background="#6B818D">
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px;">
+&lt;!--- INSERT TODO HTML HERE ---&gt;
+&lt;div&gt;
+  &lt;h2&gt;To Do List&lt;/h2&gt;
+    &lt;p&gt;
+      &lt;label for="new-task"&gt;Add Item&lt;/label&gt;
+      &lt;input id="new-task" type="text"&gt;
+      &lt;button id="add"&gt;Add&lt;/button&gt;
+    &lt;/p&gt;
+  &lt;ul id="list"&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!--- INSERT TODO HTML HERE ---&gt;
+						</code>
+						</pre>
+					</section>
+
 					<section data-background="#6B818D">
 						Add CSS
 					</section>
 					<section data-background="#6B818D">
-						Add JS
+						<h3>Add JS</h3>
+						<p style="font-size:20px;">
+							Within the <i>window.onload = function (){}</i>
+						</p>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px;">
+//Select HTML Elements of Input, Button, List Holder
+var taskInput = document.getElementById("new-task"); // new-task
+var addButton = document.getElementById("add");//Gets
+var taskList = document.getElementById("list"); //Task Holder
+						</code>
+					</pre>
+					</section>
+					<section>
+						<h2>Main Functions</h2>
+						<ol>
+							<li>
+								Create Task Elements
+							</li>
+							<li>
+								Add Task Button
+							</li>
+							<li>
+								Delete Task Button
+							</li>
+						</ol>
+					</section>
+
+					<section data-background="#6B818D">
+						<p>Create Task Element Function</p>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px; height: 100%;">
+//Create Task Item Elements
+var createNewTaskElement = function(taskString) {
+ // create List Item
+ var listItem = document.createElement("li");
+ // input checkbox
+ var checkBox = document.createElement("input");
+ // label
+ var label = document.createElement("label");
+ // button.delete
+ var deleteButton = document.createElement("button");
+						</code>
+					</pre>
+					</section>
+
+					<section data-background="#6B818D">
+						<p>CreateNewTaskElement Continued..</p>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px; height: 100%;">
+ //CONTINUED from createNewTaskElement function.....
+  //Each element needs modified
+  checkBox.type = "checkBox";
+  deleteButton.innerText = "Delete";
+  deleteButton.className = "delete";
+
+  label.innerText = taskString;
+
+ // Each element needs appending
+  listItem.appendChild(label);
+  listItem.appendChild(deleteButton);
+
+ return listItem;
+}
+						</code>
+						</pre>
+					</section>
+					<section data-background="#6B818D">
+						<p>
+							Add Task Button
+						</p>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px;">
+var addTask = function() {
+  console.log("Add Task...");
+  //Create a new list item with the text from the #new-task:
+  var listItem = createNewTaskElement(taskInput.value);
+
+  //Append listItem to incompleteTaskHolder
+  taskList.appendChild(listItem);
+  bindTaskEvents(listItem);
+  taskInput.value = "";
+}
+						</code>
+					</pre>
+					</section>
+					<section data-background="#6B818D">
+						<p>
+							Add EventListener to Add Task Button
+						</p>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px;">
+//Set the click handler to the addTask function
+addButton.addEventListener("click", addTask);
+						</code>
+					</pre>
+					</section>
+
+					<section data-background="#6B818D">
+						<p>
+							Delete Task Button
+						</p>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px;">
+//Delete an existing task
+var deleteTask = function () {
+ console.log("Delete Task...");
+ //Remove the parent list item from the ul
+ var listItem = this.parentNode;
+ var ul = listItem.parentNode;
+
+ ul.removeChild(listItem);
+}
+						</code>
+					</pre>
+					</section>
+
+					<section data-background="#6B818D">
+						<p>
+							Connect Delete Function to Delete Button
+						</p>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px;">
+var bindTaskEvents = function(taskListItem) {
+ console.log("Bind List item events");
+ // select listitems chidlren
+ var deleteButton = taskListItem.querySelector("button.delete");
+ //bind deleteTask to delete button
+ deleteButton.onclick = deleteTask;
+}
+						</code>
+					</pre>
+					</section>
+					<section data-background="#6B818D">
+						<p>
+							Connecting Delete Function (continued.)
+						</p>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+						<code class="hljs" style="text-align: left; padding-left: 5px;">
+//cycle over taskList ul list item
+for (var i = 0; i < taskList.children.length; i ++) {
+  //bind events to list item's children (taskCompleted)
+  bindTaskEvents(taskList.children[i]);
+}
+						</code>
+					</pre>
 					</section>
 
 				</section>
@@ -1017,7 +1198,12 @@ function someFunction (parameter){
 						Resources
 					</section>
 					<section data-background="#6B818D">
-						stuff
+						<li>
+							<a href="https://codepen.io/Develonaut/pen/XJyzeZ">To Do List By Ryan McHenry</a>
+						</li>
+						<li>
+							<a href="https://css-tricks.com/how-to-create-a-notebook-design-with-css/">CSS Tricks: Notebook Background</a>
+						</li>
 					</section>
 					<section>
 						What Now?
