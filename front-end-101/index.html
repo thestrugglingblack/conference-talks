@@ -974,10 +974,10 @@ function someFunction (parameter){
 						</p>
 						<ol>
 							<li>
-								Go to the project here.
-							</li>
+								Go to the project here http://bit.ly/2iCecyU
+							</li><br />
 							<li>
-								Open
+							 <code>git clone https://github.com/ZuriHunter/front-end-101-template.git</code>
 							</li>
 						</ol>
 					</section>
@@ -1006,19 +1006,22 @@ function someFunction (parameter){
   &lt;script src="js/custom.js"&gt;&lt;/script&gt;
  &lt;/head&gt;
 
- &lt;body&gt;
+ &lt;body class="centered"&gt;
 	&lt;!--- INSERT TODO HTML HERE ---&gt;
  &lt;/body&gt;
 &lt;/html&gt;
 						</code>
 						</pre>
+						<p>
+							Reference our JS and CSS files
+						</p>
 					</section>
 
 					<section data-background="#6B818D">
 						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
 						<code class="hljs" style="text-align: left; padding-left: 5px;">
 &lt;!--- INSERT TODO HTML HERE ---&gt;
-&lt;div&gt;
+&lt;div class="notepad"&gt;
   &lt;h2&gt;To Do List&lt;/h2&gt;
     &lt;p&gt;
       &lt;label for="new-task"&gt;Add Item&lt;/label&gt;
@@ -1031,10 +1034,116 @@ function someFunction (parameter){
 &lt;!--- INSERT TODO HTML HERE ---&gt;
 						</code>
 						</pre>
+						<p>
+							Add our label, input and button element
+						</p>
+					</section>
+					<section data-background="#6B818D">
+						<img src="/assets/todo-html.png" />
+						<p>
+							Final HTML
+						</p>
 					</section>
 
 					<section data-background="#6B818D">
-						Add CSS
+						<h3>Add CSS</h3>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+							<code class="hljs" style="text-align: left; padding-left: 5px;">
+* {
+  font-family: monospace;
+}
+
+body {
+  background-image: url(../assets/wooden-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+}
+							</code>
+						</pre>
+						<p>
+							Sets background and the font style
+						</p>
+					</section>
+
+					<section data-background="#6B818D">
+						<img src="/assets/css-one.png" />
+					</section>
+
+					<section data-background="#6B818D">
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+							<code class="hljs" style="text-align: left; padding-left: 5px;">
+h2 { padding-left: 50px; }
+p { padding-left: 50px; }
+label { padding-right: 100px; }
+.notepad {
+  background-color: #f5f5f5 !important;
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+							</code>
+						</pre>
+						<p>
+							Adds padding to elements and modify .notepad to be emulate a page
+						</p>
+					</section>
+
+					<section data-background="#6B818D">
+						<img src="/assets/css-two.png" />
+					</section>
+
+					<section data-background="#6B818D">
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+							<code class="hljs" style="text-align: left; padding-left: 5px;">
+#list {
+  background-color: #f5f5f5 !important;
+  color: #555;
+  font-size: 22px;
+  padding: 0 !important;
+  width: 500px;
+  font-family: courier, monospace;
+  border: 1px solid #dedede;
+}
+
+#list li {
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+}
+							</code>
+						</pre>
+						<p>
+							Add styling for the items that will show on list
+						</p>
+					</section>
+
+					<section data-background="#6B818D">
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+							<code class="hljs" style="text-align: left; padding-left: 5px;">
+#list li:hover {
+  background-color: #f0f0f0;
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -ms-transition:     all 0.2s;
+  -o-transition:      all 0.2s;
+}
+							</code>
+						</pre>
+						<p>
+							Add styling for when cursor hovers over an item
+						</p>
+					</section>
+
+					<section data-background="#6B818D">
+						<img src="/assets/todo-css.png" />
+						<p>
+							Final CSS
+						</p>
 					</section>
 					<section data-background="#6B818D">
 						<h3>Add JS</h3>
@@ -1183,6 +1292,87 @@ for (var i = 0; i < taskList.children.length; i ++) {
 }
 						</code>
 					</pre>
+					</section>
+
+					<section data-background="#6B818D">
+						<h3>Final JS</h3>
+						<pre style="box-shadow: none; max-height: 100% !important; max-width: 100% !important;">
+							<code class="hljs" style="text-align: left; padding-left: 5px;">
+window.onload = function(){
+
+//Select HTML Elements of Input, Button, List Holder
+var taskInput = document.getElementById("new-task"); // new-task
+var addButton = document.getElementById("add");//Gets
+var taskList = document.getElementById("list"); //Task Holder
+
+//New Task List item
+var createNewTaskElement = function(taskString) {
+	// create List Item
+  var listItem = document.createElement("li");
+  // input checkbox
+  var checkBox = document.createElement("input");
+  // label
+  var label = document.createElement("label");
+  // button.delete
+  var deleteButton = document.createElement("button");
+
+  //Each element needs modified
+  checkBox.type = "checkBox";
+  deleteButton.innerText = "Delete";
+  deleteButton.className = "delete";
+
+  label.innerText = taskString;
+
+  // Each element needs appending
+  listItem.appendChild(label);
+  listItem.appendChild(deleteButton);
+
+	return listItem;
+}
+
+
+//Add a new task
+var addTask = function() {
+  console.log("Add Task...");
+  //Create a new list item with the text from the #new-task:
+  var listItem = createNewTaskElement(taskInput.value);
+  //Append listItem to incompleteTaskHolder
+  taskList.appendChild(listItem);
+  bindTaskEvents(listItem);
+  taskInput.value = "";
+}
+
+//Delete an existing task
+var deleteTask = function () {
+    console.log("Delete Task...");
+		//Remove the parent list item from the ul
+  	var listItem = this.parentNode;
+  	var ul = listItem.parentNode;
+
+  	ul.removeChild(listItem);
+}
+
+//Set the click handler to the addTask function
+addButton.addEventListener("click", addTask);
+
+
+var bindTaskEvents = function(taskListItem) {
+  	console.log("Bind List item events");
+  	// select listitems chidlren
+    var deleteButton = taskListItem.querySelector("button.delete");
+		//bind deleteTask to delete button
+ 		deleteButton.onclick = deleteTask;
+}
+  //cycle over taskList ul list item
+  for (var i = 0; i < taskList.children.length; i ++) {
+    //bind events to list item's children (taskCompleted)
+    bindTaskEvents(taskList.children[i]);
+  }
+
+}
+
+							</code>
+						</pre>
 					</section>
 
 				</section>
